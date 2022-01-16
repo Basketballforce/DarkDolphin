@@ -278,3 +278,35 @@ td.category>img{
 .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{
     color: af471d;
 }
+
+/* guide pages */
+.toc{
+    background-color: #1e1e1e;
+}
+
+div.thumbinner{
+    background: #1e1e1e;
+}
+
+kbd{
+    color: #000;
+    background-color: #fcfcfc;
+}
+
+code{
+    color: #ff0041;
+    background-color: #3c0000;
+}
+
+pre{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+table.wikitable, table.prettytable{
+    background-color: #2b2b2b;
+}
+
+table.wikitable > tr > th, table.wikitable > * > tr > th{
+    background-color: #1e1e1e;
+}
