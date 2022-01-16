@@ -1,9 +1,9 @@
-// Mode toggling built with significant help from https://css-tricks.com/author/mohamedadhuham/ 
+// Mode toggling built with help from https://css-tricks.com/author/mohamedadhuham/ 
 // on https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
 
 
 
-//////////// INTIALIZATION //////////////
+//////////// Var Initialization //////////////
 
 // Select the icon
 const sunMoon = document.querySelector("#sunMoon")
@@ -23,7 +23,7 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
 const currentTheme = localStorage.getItem("theme")
 
 
-/////////// Check for theme on intial page load (local storage or os/browser preference) ////////////
+/////// Check for theme on intial page load (local storage or os/browser preference) /////////
 
 // run on page load
 $(document).ready(function(){
@@ -52,7 +52,7 @@ $(document).ready(function(){
 });
 
 
-///////////// Handle icon click events/requests to change the mode to light or dark //////////////
+///////// Handle icon click events/requests to change the mode to light or dark //////////
 
 // Event that activates when sun or moon is clicked
 sunMoon.addEventListener("click", function() {
@@ -62,7 +62,7 @@ sunMoon.addEventListener("click", function() {
     cssSheet.href = "./lightDolphin.css"
     var theme = 'light'
     
-    // otherwise the theme is currently dark and needs to change it to light mode
+  // otherwise the theme is currently dark and needs to change it to light mode
   } else {
     sunMoon.innerHTML = sun
     cssSheet.href = "./darkDolphin.css";
@@ -75,7 +75,7 @@ sunMoon.addEventListener("click", function() {
 
 
 
-////// Move light/dark icons between mobile and desktop view
+////// Move light/dark icons between mobile and desktop view ///////
 
 // toggle where the dark/light mode icon appears
 const lastNavbarLi = document.querySelector("#lastNavbarLi")
@@ -95,8 +95,7 @@ function moveSunMoon(){
 }
 
 // bootstrap switches between mobile and desktop at 768 px by default
-// call the toggle icon to move between the header and hamburger when first
-// loading the page and when the page is resized
+// call moveSunMoon function when first loading the page and when the page is resized
 
 // if window resize call 
 $(window).resize(function() {
