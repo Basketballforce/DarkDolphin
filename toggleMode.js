@@ -1,3 +1,7 @@
+// script credit below is due to
+// article can be found at https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-using-javascript-local-storage
+// https://css-tricks.com/author/mohamedadhuham/ https://twitter.com/adhuhamofficial
+
 // Select the button
 const btn = document.querySelector(".btn-toggle");
 // Check for dark mode preference at the OS level
