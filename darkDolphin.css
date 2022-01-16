@@ -120,18 +120,6 @@
         background-image: linear-gradient(to bottom, #797979 0, #101010 100%);
     }
 
-
-    /*toggle svg*/
-    svg.feather{
-        stroke: #999;
-        margin-left: 10px;
-        margin-top: 13px;
-    }
-
-    svg.feather:hover {
-        stroke: white;
-    }
-
     .btn-primary{
         background-image: linear-gradient(to bottom, #f0975f 0, #ea622b 100%);
         border-color: #cb5525;
