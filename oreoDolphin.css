@@ -1,0 +1,12 @@
+        /*toggle svg*/
+        svg.feather{
+            stroke: #999;
+            margin-left: 10px;
+            margin-top: 13px;
+            cursor:pointer;
+            float:right;
+        }
+    
+        svg.feather:hover {
+            stroke: white;
+        }
