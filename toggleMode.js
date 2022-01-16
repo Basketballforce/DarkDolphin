@@ -54,7 +54,9 @@ $(document).ready(function(){
 
 ///////// Handle icon click events/requests to change the mode to light or dark //////////
 
-// Event that activates when sun or moon is clicked
+// Event that activates when sun or moon is clicked. 
+// Minor optimization of # of resize calls can be done with throttle wrapper around 
+// After testing, didn't seem worth it
 sunMoon.addEventListener("click", function() {
   // If light mode is already set as the href, then change it to dark mode
   if (!cssSheet.href.includes("lightDolphin.css")) {
