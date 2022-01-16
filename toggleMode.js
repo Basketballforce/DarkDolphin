@@ -1,6 +1,10 @@
 // Mode toggling built with significant help from https://css-tricks.com/author/mohamedadhuham/ 
 // on https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
 
+
+
+//////////// INTIALIZATION //////////////
+
 // Select the icon
 const sunMoon = document.querySelector("#sunMoon")
 
@@ -11,63 +15,74 @@ const moon =' <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" vie
 // select the current css theme
 const cssSheet = document.querySelector("#theme-link")
 
-// check for default presence of alternative/secondary mode (dark mode)
 // Check for dark mode preference on the browser/os preference
+// returns boolean in ".matches" attribute
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
 
 // Get the user's theme preference from local storage, if there
 const currentTheme = localStorage.getItem("theme")
 
-if (currentTheme == "dark") {
-  sunMoon.innerHTML = sun
-  cssSheet.href = "./darkDolphin.css"
-  document.body.classList.toggle("dark-mode")
 
-} else {
-  sunMoon.innerHTML = moon
-  cssSheet.href = "./lightDolphin.css"
-  document.body.classList.toggle("light-mode")
-}
+/////////// Check for theme on intial page load (local storage or os/browser preference) ////////////
 
-console.log(currentTheme)
-console.log(sunMoon.innerHTML)
-
-// Listen for a click on the icon 
-sunMoon.addEventListener("click", function() {
-  // If the user's OS setting is dark and matches our .dark-mode class...
-  if (prefersDarkScheme.matches) {
-    // ...then toggle the light mode class
-    cssSheet.href = "./lightDolphin.css"
-    document.body.classList.toggle("light-mode")
-    // ...but use .dark-mode if the .light-mode class is already on the body,
-    var theme = document.body.classList.contains("light-mode") ? "light" : "dark";
-  } else {
-    // Otherwise, let's do the same thing, but for .dark-mode
-    cssSheet.href = "./darkDolphin.css";
-    document.body.classList.toggle("dark-mode");
-    var theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
-  }
-  // Finally, let's save the current preference to localStorage to keep using it
-  localStorage.setItem("theme", theme);
-
-  if(theme=="dark"){
+// run on page load
+$(document).ready(function(){
+  // 1. if the user has a set mode in their local storage use it
+  if (currentTheme == "dark") {
     sunMoon.innerHTML = sun
-    cssSheet.href = "./darkDolphin.css";
-  }else{
+    cssSheet.href = "./darkDolphin.css"
+
+  // 2. Otherwise check if light mode is set in localstorage
+  } else if (currentTheme=="light"){
     sunMoon.innerHTML = moon
     cssSheet.href = "./lightDolphin.css"
   }
-  console.log(theme)
+
+  // 3. Otherwise check if the user has a default OS/Browser mode preference
+  // could remove os/browser checks as desired and just default to light in above step 2
+  else if (prefersDarkScheme.matches==true){
+    sunMoon.innerHTML = sun
+    cssSheet.href = "./darkDolphin.css"
+  }
+  // 4. default to light mode
+  else {
+    sunMoon.innerHTML = moon
+    cssSheet.href = "./lightDolphin.css"
+  }
+});
+
+
+///////////// Handle icon click events/requests to change the mode to light or dark //////////////
+
+// Event that activates when sun or moon is clicked
+sunMoon.addEventListener("click", function() {
+  // If light mode is already set as the href, then change it to dark mode
+  if (!cssSheet.href.includes("lightDolphin.css")) {
+    sunMoon.innerHTML = moon
+    cssSheet.href = "./lightDolphin.css"
+    var theme = 'light'
+    
+    // otherwise the theme is currently dark and needs to change it to light mode
+  } else {
+    sunMoon.innerHTML = sun
+    cssSheet.href = "./darkDolphin.css";
+    var theme = 'dark'
+  }
+  // Lastly, save the  current preference to localStorage to keep using it on new page requests/other pages
+  localStorage.setItem("theme", theme);
+  
 })
 
 
+
+////// Move light/dark icons between mobile and desktop view
 
 // toggle where the dark/light mode icon appears
 const lastNavbarLi = document.querySelector("#lastNavbarLi")
 const hamburger = document.querySelector("#hamburger")
 
 function moveSunMoon(){
-  // if windows width indicates mobile view
+  // if window width indicates mobile view
   if  (window.innerWidth < 768) {
     sunMoon.remove()
     hamburger.after(sunMoon)
@@ -83,7 +98,7 @@ function moveSunMoon(){
 // call the toggle icon to move between the header and hamburger when first
 // loading the page and when the page is resized
 
-// if window resize call responsive function
+// if window resize call 
 $(window).resize(function() {
   moveSunMoon();
 });
