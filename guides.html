@@ -1,0 +1,392 @@
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dolphin Emulator - Guides</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="See all the guides written by the Dolphin team about the emulator.">
+
+        
+        
+        <meta property="og:site_name" content="Dolphin Emulator" />
+        <meta property="fb:admins" content="1064682820" />
+
+        <link rel="shortcut icon" href="https://dolphin-emu.org/m/static/img/favicon.0885422b72c1.ico" />
+
+        <link rel="alternate" type="application/atom+xml" title="Latest blog articles" href="/blog/feeds/" />
+
+        
+            
+            <link rel="alternate" hreflang="ast" href="//ast.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ms-MY" href="//ms.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ca" href="//ca.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cs" href="//cs.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cy" href="//cy.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="da" href="//da.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="de" href="//de.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+        
+            
+            <link rel="alternate" hreflang="es" href="//es.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="el" href="//el.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="fr" href="//fr.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="gl" href="//gl.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="it" href="//it.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="hu" href="//hu.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nl" href="//nl.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nb" href="//nb.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pl" href="//pl.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt" href="//pt.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt-BR" href="//br.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ru" href="//ru.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="sv" href="//sv.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="tr" href="//tr.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="zh-CN" href="//cn.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ja" href="//ja.dolphin-emu.org/docs/guides/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ko" href="//ko.dolphin-emu.org/docs/guides/" />
+            
+        
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap.min.9e0acbc8a914.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap-theme.min.c1c924a4f6b3.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/dolphin.d9d1550ceb37.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/sprites/nav.fae7f1660efd.css" rel="stylesheet">
+        
+        
+
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34036954-1']);
+          _gaq.push(['_setDomainName', 'dolphin-emu.org']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          window.google_analytics_uacct = "UA-34036954-1";
+        </script>
+        
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/highcharts.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/modules/data.js"></script>
+        <script>
+          var CHART_ID = 0;
+          function addChart(options) {
+            var this_id = CHART_ID++;
+            document.write('<div id="chart' + CHART_ID + '"></div>');
+            options['credits'] = false;
+            options['chart'] = options['chart'] || {};
+            options['chart']['style'] = options['chart']['style'] || {};
+            options['chart']['style']['fontFamily'] = 'Helvetica Neue,Helvetica,Arial,sans-serif';
+            Highcharts.chart("chart" + CHART_ID, options);
+          }
+          window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "content": {
+                "message": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services.",
+                "link": "Learn more",
+                "href": "https://cookiesandyou.com/",
+              },
+              "palette": {
+                "popup": {
+                  "background": "#000"
+                },
+                "button": {
+                  "background": "#f1d600"
+                }
+              }
+            })
+          });
+        </script>
+    </head>
+
+    <body>
+        
+
+        <div id="navbar-dolphin" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" id="hamburger" href="/"><img src="https://dolphin-emu.org/m/static/img/logo.fefed4054d1c.png" height="32" alt="Dolphin Emulator"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-left">
+                        <li><a href="/download.html">Download</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/media.html">Screenshots</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/guides.html">Guides</a></li>
+                        <li><a href="/compat.html">Compatibility</a></li>
+                        <li><a href="https://forums.dolphin-emu.org/">Forum</a></li>
+                        <li><a href="https://wiki.dolphin-emu.org/">Wiki</a></li>
+                        <li id="lastNavbarLi"><a href="https://github.com/dolphin-emu/dolphin">Code</a></li>
+                        <span id="sunMoon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-en"></div> <span>English</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+                                <li><a href="//ast.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-ast"></div><span dir="ltr">Asturianu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ms.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-ms"></div><span dir="ltr">Bahasa Melayu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ca.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-ca"></div><span dir="ltr">Català</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cs.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-cs"></div><span dir="ltr">Česky</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cy.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-cy"></div><span dir="ltr">Cymraeg</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//da.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-da"></div><span dir="ltr">Dansk</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//de.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-de"></div><span dir="ltr">Deutsch</span></a></li>
+                                
+                            
+                                
+                            
+                                
+                                <li><a href="//es.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-es"></div><span dir="ltr">Español</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//el.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-el"></div><span dir="ltr">Ελληνικά</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//fr.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-fr"></div><span dir="ltr">Français</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//gl.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-gl"></div><span dir="ltr">Galego</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//it.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-it"></div><span dir="ltr">Italiano</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//hu.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-hu"></div><span dir="ltr">Magyar</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nl.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-nl"></div><span dir="ltr">Nederlands</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nb.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-nb"></div><span dir="ltr">Norsk (Bokmål)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pl.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-pl"></div><span dir="ltr">Polski</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pt.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-pt"></div><span dir="ltr">Português</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//br.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-br"></div><span dir="ltr">Português (Brasil)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ru.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-ru"></div><span dir="ltr">Русский</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//sv.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-sv"></div><span dir="ltr">Svenska</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//tr.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-tr"></div><span dir="ltr">Türkçe</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cn.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-cn"></div><span dir="ltr">中文(中国)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ja.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-ja"></div><span dir="ltr">日本語</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ko.dolphin-emu.org/docs/guides/?nocr=true"><div class="flag sprite-nav-ko"></div><span dir="ltr">한국어</span></a></li>
+                                
+                            
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="container">
+            
+            
+<div class="page-header">
+    <h1>Guides and documentation</h1>
+</div>
+
+<dl>
+
+<dt class="always-ltr"><a href="/docs/guides/ripping-games/">Ripping Games</a>
+<dd class="always-ltr"><p>How to dump your games for use in Dolphin.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/performance-guide/">Performance Guide</a>
+<dd class="always-ltr"><p>Learn how to configure Dolphin to get the maximum performance out of it. This guide explains all the settings of the emulator and their impact on performance.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/configuring-controllers/">Configuring controllers</a>
+<dd class="always-ltr"><p>How to configure Dolphin to emulate a GameCube pad or a Wiimote using a different type of controller or even a keyboard.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/controlling-global-user-directory/">Controlling the Global User Directory</a>
+<dd class="always-ltr"><p>Explains how to bring settings and saves into 4.0-era builds, and how to control the new system.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/how-use-official-gc-controller-adapter-wii-u/">How to use the Official GameCube Controller Adapter for Wii U in Dolphin</a>
+<dd class="always-ltr"><p>Gives instructions for how to set up and use Dolphin&#39;s native support for the Official GameCube Adapter for Wii U. </p>
+
+<dt class="always-ltr"><a href="/docs/guides/recommended-accessories-dolphin/">Recommended accessories for Dolphin</a>
+<dd class="always-ltr"><p>A guide listing anything you might want to buy to make your experience with Dolphin better: Bluetooth dongles, sensor bars, Wii Remotes, adapters, etc.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/wii-remote-plus-rvl-cnt-01-tr-connection-guide/">Wii Remote Plus (RVL-CNT-01-TR) Connection Guide</a>
+<dd class="always-ltr"><p>Describes how to use the problematic breed of the Wii Remote Plus: the RVL-CNT-01-TR.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/netplay-guide/">Netplay Guide</a>
+<dd class="always-ltr"><p>Shows how to set up Netplay in Dolphin for reliable internet play.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/wii-network-guide/">Wii Network Guide</a>
+<dd class="always-ltr"><p>Learn how to configure Dolphin to connect to online services, such as the Wii Shop and custom WiFi Connection servers.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/virtual-sd-card-guide/">Virtual SD Card Guide</a>
+<dd class="always-ltr"><p>Shows how to make a virtual SD card, required by many homebrew apps and game mods.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/nand-usage-guide/">NAND Usage Guide</a>
+<dd class="always-ltr"><p>Explains how to dump and use your Wii&#39;s NAND in Dolphin.</p>
+
+<dt class="always-ltr"><a href="/docs/guides/fifo-player-documentation-testers-and-developers/">FIFO Player documentation (for testers and developers)</a>
+<dd class="always-ltr"><p>The FIFO Player is a feature of Dolphin allowing graphics rendering to be recorded to a file. It is most commonly used by developers to debug graphics issues without having to own the game. If you want to report a graphics rendering bug, read this guide first!</p>
+
+<dt class="always-ltr"><a href="/docs/guides/building-dolphin-linux/">Building Dolphin on Linux</a>
+<dd class="always-ltr"><p>Gives thorough instructions for how to compile Dolphin on Linux</p>
+
+
+        </div>
+
+        <footer>
+        <p class="footer-text">
+            &copy; Dolphin Emulator Project -
+            <a href="https://github.com/dolphin-emu/www">Website Source Code</a> -
+            <a href="/docs/privacy/">Privacy Policy</a>
+        </p>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://dolphin-emu.org/m/static/js/bootstrap.min.cfe18215d149.js"></script>
+        
+        
+    </body>
+</html>
+
+<link id="theme-link" rel="stylesheet" href="./lightDolphin.css">
+<link rel="stylesheet" href="./oreoDolphin.css">
+<script src="./toggleMode.js"></script>

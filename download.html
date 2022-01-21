@@ -1,0 +1,935 @@
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dolphin Emulator - Download</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Download the latest version of the Dolphin Emulator (5.0-15905) from the official website.">
+
+        
+        
+        <meta property="og:site_name" content="Dolphin Emulator" />
+        <meta property="fb:admins" content="1064682820" />
+
+        <link rel="shortcut icon" href="https://dolphin-emu.org/m/static/img/favicon.0885422b72c1.ico" />
+
+        <link rel="alternate" type="application/atom+xml" title="Latest blog articles" href="/blog/feeds/" />
+
+        
+            
+            <link rel="alternate" hreflang="ast" href="//ast.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ms-MY" href="//ms.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ca" href="//ca.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cs" href="//cs.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cy" href="//cy.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="da" href="//da.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="de" href="//de.dolphin-emu.org/download/" />
+            
+        
+            
+        
+            
+            <link rel="alternate" hreflang="es" href="//es.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="el" href="//el.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="fr" href="//fr.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="gl" href="//gl.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="it" href="//it.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="hu" href="//hu.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nl" href="//nl.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nb" href="//nb.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pl" href="//pl.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt" href="//pt.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt-BR" href="//br.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ru" href="//ru.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="sv" href="//sv.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="tr" href="//tr.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="zh-CN" href="//cn.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ja" href="//ja.dolphin-emu.org/download/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ko" href="//ko.dolphin-emu.org/download/" />
+            
+        
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap.min.9e0acbc8a914.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap-theme.min.c1c924a4f6b3.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/dolphin.d9d1550ceb37.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/sprites/nav.fae7f1660efd.css" rel="stylesheet">
+        
+        
+
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34036954-1']);
+          _gaq.push(['_setDomainName', 'dolphin-emu.org']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          window.google_analytics_uacct = "UA-34036954-1";
+        </script>
+        
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/highcharts.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/modules/data.js"></script>
+        <script>
+          var CHART_ID = 0;
+          function addChart(options) {
+            var this_id = CHART_ID++;
+            document.write('<div id="chart' + CHART_ID + '"></div>');
+            options['credits'] = false;
+            options['chart'] = options['chart'] || {};
+            options['chart']['style'] = options['chart']['style'] || {};
+            options['chart']['style']['fontFamily'] = 'Helvetica Neue,Helvetica,Arial,sans-serif';
+            Highcharts.chart("chart" + CHART_ID, options);
+          }
+          window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "content": {
+                "message": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services.",
+                "link": "Learn more",
+                "href": "https://cookiesandyou.com/",
+              },
+              "palette": {
+                "popup": {
+                  "background": "#000"
+                },
+                "button": {
+                  "background": "#f1d600"
+                }
+              }
+            })
+          });
+        </script>
+    </head>
+
+    <body>
+        
+
+        <div id="navbar-dolphin" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" id="hamburger" href="/"><img src="https://dolphin-emu.org/m/static/img/logo.fefed4054d1c.png" height="32" alt="Dolphin Emulator"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-left">
+                        <li><a href="/download.html">Download</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/media.html">Screenshots</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/guides.html">Guides</a></li>
+                        <li><a href="/compat.html">Compatibility</a></li>
+                        <li><a href="https://forums.dolphin-emu.org/">Forum</a></li>
+                        <li><a href="https://wiki.dolphin-emu.org/">Wiki</a></li>
+                        <li id="lastNavbarLi"><a href="https://github.com/dolphin-emu/dolphin">Code</a></li>
+                        <span id="sunMoon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-en"></div> <span>English</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+                                <li><a href="//ast.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-ast"></div><span dir="ltr">Asturianu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ms.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-ms"></div><span dir="ltr">Bahasa Melayu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ca.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-ca"></div><span dir="ltr">Català</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cs.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-cs"></div><span dir="ltr">Česky</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cy.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-cy"></div><span dir="ltr">Cymraeg</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//da.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-da"></div><span dir="ltr">Dansk</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//de.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-de"></div><span dir="ltr">Deutsch</span></a></li>
+                                
+                            
+                                
+                            
+                                
+                                <li><a href="//es.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-es"></div><span dir="ltr">Español</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//el.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-el"></div><span dir="ltr">Ελληνικά</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//fr.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-fr"></div><span dir="ltr">Français</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//gl.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-gl"></div><span dir="ltr">Galego</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//it.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-it"></div><span dir="ltr">Italiano</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//hu.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-hu"></div><span dir="ltr">Magyar</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nl.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-nl"></div><span dir="ltr">Nederlands</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nb.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-nb"></div><span dir="ltr">Norsk (Bokmål)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pl.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-pl"></div><span dir="ltr">Polski</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pt.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-pt"></div><span dir="ltr">Português</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//br.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-br"></div><span dir="ltr">Português (Brasil)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ru.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-ru"></div><span dir="ltr">Русский</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//sv.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-sv"></div><span dir="ltr">Svenska</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//tr.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-tr"></div><span dir="ltr">Türkçe</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cn.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-cn"></div><span dir="ltr">中文(中国)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ja.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-ja"></div><span dir="ltr">日本語</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ko.dolphin-emu.org/download/?nocr=true"><div class="flag sprite-nav-ko"></div><span dir="ltr">한국어</span></a></li>
+                                
+                            
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="container">
+            
+            
+
+<div style="text-align: center;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8646203626363069";
+/* Downloads page ad */
+google_ad_slot = "1119107312";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div class="page-header">
+    <h1>Download</h1>
+</div>
+
+<div id="download-beta">
+<h1>Beta versions</h1>
+    
+<div class="alert alert-info">
+    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>
+    article. Use the latest beta version if you prefer stability over the newest features in the
+    <a href="#download-dev">development versions</a>.</p>
+</div>
+
+<div class="alert alert-danger">
+    <p>The Windows beta versions <b>require</b> the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">64-bit Visual C++ redistributable for Visual Studio 2019</a> to be installed.</p>
+</div>
+
+
+
+
+<table class="versions-list dev-versions">
+    <tbody>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/db02b50d2ecdfbbc21e19aadc57253c353069f77/">5.0-15445</a></td>
+            <td class="reldate" title="2021-11-01T18:30:20.914361+01:00">2 months, 2 weeks ago</td>
+            <td class="description always-ltr">GameINI:  Change Texture Cache to Safe in R44J8P (<a href="https://github.com/dolphin-emu/dolphin/pull/10196">PR #10196</a> from <a href="https://github.com/JMC47">JMC47</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/0f/63/dolphin-master-5.0-15445-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/8d/25/dolphin-master-5.0-15445-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/80/fa/dolphin-master-5.0-15445.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/207c931a04c8e2629a735bc2b3f36b5c89365ca7/">5.0-15260</a></td>
+            <td class="reldate" title="2021-10-03T19:44:25.214435+02:00">3 months, 2 weeks ago</td>
+            <td class="description always-ltr">Translation resources sync with Transifex</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/76/43/dolphin-master-5.0-15260-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/e5/5e/dolphin-master-5.0-15260-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/c3/0c/dolphin-master-5.0-15260.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/4b8b53ac732645f6c0fd3f4b11733cb3d86c9c41/">5.0-15105</a></td>
+            <td class="reldate" title="2021-09-03T16:54:21.905627+02:00">4 months, 2 weeks ago</td>
+            <td class="description always-ltr">Disable Dual Core by default for multiple Heavy Iron games (<a href="https://github.com/dolphin-emu/dolphin/pull/10083">PR #10083</a> from <a href="https://github.com/JoeyBallentine">JoeyBallentine</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/fd/c8/dolphin-master-5.0-15105-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/eb/fa/dolphin-master-5.0-15105-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/e8/76/dolphin-master-5.0-15105.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (Intel)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/10/d8/dolphin-master-5.0-15105.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/3cc274880f47d340bd508dba91aaf37c48acd367/">5.0-14790</a></td>
+            <td class="reldate" title="2021-07-31T23:50:02.480653+02:00">5 months, 2 weeks ago</td>
+            <td class="description always-ltr">Translation resources sync with Transifex</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/5a/6c/dolphin-master-5.0-14790-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/c2/46/dolphin-master-5.0-14790-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/3a/3f/dolphin-master-5.0-14790.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (Intel)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/5d/60/dolphin-master-5.0-14790.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/acc7d3710d60552769f61f4b44bc8533a940df36/">5.0-14344</a></td>
+            <td class="reldate" title="2021-06-05T13:41:40.540803+02:00">7 months, 2 weeks ago</td>
+            <td class="description always-ltr">Common/FileUtil: Add some missing configs to D_CONFIG_IDX (<a href="https://github.com/dolphin-emu/dolphin/pull/9780">PR #9780</a> from <a href="https://github.com/Techjar">Techjar</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/06/aa/dolphin-master-5.0-14344-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/9e/de/dolphin-master-5.0-14344-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/83/e2/dolphin-master-5.0-14344.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (Intel)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/85/01/dolphin-master-5.0-14344.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+</div>
+
+<div id="download-dev">
+<h1>Development versions</h1>
+    
+<div class="alert alert-info">
+    <p>Development versions are released every time a developer makes a change to
+    Dolphin, several times every day! Using development versions enables you to
+    use the latest and greatest improvements to the project. They are however
+    less tested than <a href="#download-beta">beta versions</a> of the emulator.</p>
+</div>
+
+<div class="alert alert-danger">
+    <p>The Windows development versions <b>require</b> the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">64-bit Visual C++ redistributable for Visual Studio 2019</a> to be installed.</p>
+</div>
+
+
+
+
+<table class="versions-list dev-versions">
+    <tbody>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/78bcc6173f6be824d4ee1a521dee221e41eea635/">5.0-15905</a></td>
+            <td class="reldate" title="2022-01-17T23:26:56.391964+01:00">4 hours ago</td>
+            <td class="description always-ltr">FifoPlayer: Add missing call to LoadSettings() (<a href="https://github.com/dolphin-emu/dolphin/pull/10378">PR #10378</a> from <a href="https://github.com/Pokechu22">Pokechu22</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/00/cf/dolphin-master-5.0-15905-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/81/89/dolphin-master-5.0-15905-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/0f/a2/dolphin-master-5.0-15905.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/b7e55e2d52e181b2943a337c8ddc7e6021819935/">5.0-15903</a></td>
+            <td class="reldate" title="2022-01-17T11:47:47.106580+01:00">16 hours ago</td>
+            <td class="description always-ltr">GameList: Convert file extensions to lowercase (<a href="https://github.com/dolphin-emu/dolphin/pull/10368">PR #10368</a> from <a href="https://github.com/Pokechu22">Pokechu22</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/c1/cd/dolphin-master-5.0-15903-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/72/a2/dolphin-master-5.0-15903-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/db/6b/dolphin-master-5.0-15903.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/e62771856092cd9bbc25c8c94c433ed0e55a9f3f/">5.0-15899</a></td>
+            <td class="reldate" title="2022-01-17T00:49:49.779180+01:00">1 day, 3 hours ago</td>
+            <td class="description always-ltr">CMakeLists: Replace tab characters with spaces (<a href="https://github.com/dolphin-emu/dolphin/pull/10373">PR #10373</a> from <a href="https://github.com/Pokechu22">Pokechu22</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/cf/ad/dolphin-master-5.0-15899-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/63/00/dolphin-master-5.0-15899-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/e4/2d/dolphin-master-5.0-15899.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/cb19472f54a9fbd9883e8246d6bb4e9ba63ff371/">5.0-15897</a></td>
+            <td class="reldate" title="2022-01-17T00:43:03.739164+01:00">1 day, 3 hours ago</td>
+            <td class="description always-ltr">CMakeLists: Change DiscIO dependency from common to core (<a href="https://github.com/dolphin-emu/dolphin/pull/10372">PR #10372</a> from <a href="https://github.com/Pokechu22">Pokechu22</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/c3/d2/dolphin-master-5.0-15897-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/ff/5f/dolphin-master-5.0-15897-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/8b/83/dolphin-master-5.0-15897.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/b7ac11080eb00424c2a54c2c3d02103e94e67695/">5.0-15895</a></td>
+            <td class="reldate" title="2022-01-17T00:14:22.951612+01:00">1 day, 3 hours ago</td>
+            <td class="description always-ltr">Create enum classes for EXI devices and slots (<a href="https://github.com/dolphin-emu/dolphin/pull/10364">PR #10364</a> from <a href="https://github.com/Pokechu22">Pokechu22</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/8c/06/dolphin-master-5.0-15895-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/5c/64/dolphin-master-5.0-15895-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/7e/85/dolphin-master-5.0-15895.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/e8bbfc26fe27c4a5c9e6b44afc4918067a70fb58/">5.0-15887</a></td>
+            <td class="reldate" title="2022-01-14T05:37:31.624920+01:00">3 days, 22 hours ago</td>
+            <td class="description always-ltr">Fix static initialisation order fiasco issue for Version variables (<a href="https://github.com/dolphin-emu/dolphin/pull/10370">PR #10370</a> from <a href="https://github.com/leoetlino">leoetlino</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/07/de/dolphin-master-5.0-15887-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/f5/2a/dolphin-master-5.0-15887-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/c2/ef/dolphin-master-5.0-15887.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/07fd17445c6ca4e89b0cef023ba711bb27c920aa/">5.0-15885</a></td>
+            <td class="reldate" title="2022-01-13T14:43:37.677748+01:00">4 days, 13 hours ago</td>
+            <td class="description always-ltr">PixelShaderGen: Fix invalid use of int3(0) (<a href="https://github.com/dolphin-emu/dolphin/pull/10366">PR #10366</a> from <a href="https://github.com/Pokechu22">Pokechu22</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/2a/1c/dolphin-master-5.0-15885-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/28/c5/dolphin-master-5.0-15885-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/a4/49/dolphin-master-5.0-15885.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/21b9e6a34fbd989547f968d4916e07e6a706b80e/">5.0-15883</a></td>
+            <td class="reldate" title="2022-01-13T14:42:10.646555+01:00">4 days, 13 hours ago</td>
+            <td class="description always-ltr">FifoPlayer: Store early memory updates option in the config and allow changing loop option at runtime (<a href="https://github.com/dolphin-emu/dolphin/pull/10355">PR #10355</a> from <a href="https://github.com/Pokechu22">Pokechu22</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/84/b2/dolphin-master-5.0-15883-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/bb/2c/dolphin-master-5.0-15883-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/b2/50/dolphin-master-5.0-15883.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/1cea399e9c74aa82b89090b01d2d4dac4e6f39be/">5.0-15880</a></td>
+            <td class="reldate" title="2022-01-13T14:35:02.507305+01:00">4 days, 13 hours ago</td>
+            <td class="description always-ltr">InputCommon: Re-enable &quot;Modifier&quot; &quot;Range&quot; settings. (<a href="https://github.com/dolphin-emu/dolphin/pull/10345">PR #10345</a> from <a href="https://github.com/jordan-woyak">jordan-woyak</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/52/a9/dolphin-master-5.0-15880-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/7f/01/dolphin-master-5.0-15880-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/4b/ab/dolphin-master-5.0-15880.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+        <tr class="infos">
+            <td class="version always-ltr"><a href="/download/dev/cfb8b9bcf4eee1f1352b8208e1334ee49282f414/">5.0-15878</a></td>
+            <td class="reldate" title="2022-01-13T13:45:46.107049+01:00">4 days, 14 hours ago</td>
+            <td class="description always-ltr">Android: Make Main.Debug setting declarations match C++ (<a href="https://github.com/dolphin-emu/dolphin/pull/10357">PR #10357</a> from <a href="https://github.com/JosJuice">JosJuice</a>)</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/builds/87/06/dolphin-master-5.0-15878-x64.7z" class="btn always-ltr btn-info win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/builds/35/53/dolphin-master-5.0-15878-universal.dmg" class="btn always-ltr btn-info osx"><i class="icon-download-alt"></i> macOS (ARM/Intel Universal)</a>
+
+<a href="https://dl.dolphin-emu.org/builds/5b/44/dolphin-master-5.0-15878.apk" class="btn always-ltr btn-info android"><i class="icon-download-alt"></i> Android</a>
+
+
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+<p><a class="btn" href="/download/list/master/1/">View older versions »</a></p>
+</div>
+
+<div style="text-align: center;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8646203626363069";
+/* Downloads page ad (middle) */
+google_ad_slot = "2595840518";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div id="download-stable">
+<h1>Stable versions</h2>
+
+
+<div class="alert alert-warning">
+    The stable versions below are years out of date and missing countless features and bug fixes.
+    <a href="#download-beta">Beta</a> or <a href="#download-dev">development</a> versions are a
+    better choice for almost all users; the stable versions should only be used if you have
+    a specific need for them.
+</div>
+
+<table class="versions-list stable-versions">
+    <tbody>
+    
+        <tr class="infos">
+            <td class="version always-ltr">Dolphin 5.0</td>
+            <td class="reldate">5 years, 6 months ago</td>
+            <td class="description"></td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl-mirror.dolphin-emu.org/5.0/dolphin-x64-5.0.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl-mirror.dolphin-emu.org/5.0/dolphin-5.0.dmg" class="btn always-ltr btn-primary osx"><i class="icon-download-alt"></i> Mac OS X</a>
+
+
+            </td>
+        </tr>
+        </li>
+    
+        <tr class="infos">
+            <td class="version always-ltr">Dolphin 4.0.2</td>
+            <td class="reldate">8 years, 1 month ago</td>
+            <td class="description"></td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0.2/dolphin-x64-4.0.2.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0.2/dolphin-x86-4.0.2.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x86</a>
+
+
+            </td>
+        </tr>
+        </li>
+    
+        <tr class="infos">
+            <td class="version always-ltr">Dolphin 4.0.1</td>
+            <td class="reldate">8 years, 2 months ago</td>
+            <td class="description"></td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0.1/dolphin-x64-4.0.1.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0.1/dolphin-x86-4.0.1.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x86</a>
+
+
+            </td>
+        </tr>
+        </li>
+    
+        <tr class="infos">
+            <td class="version always-ltr">Dolphin 4.0</td>
+            <td class="reldate">8 years, 3 months ago</td>
+            <td class="description"></td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0/dolphin-4.0-x64.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0/dolphin-4.0-x86.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x86</a>
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0/dolphin-4.0.dmg" class="btn always-ltr btn-primary osx"><i class="icon-download-alt"></i> Mac OS X</a>
+
+<a href="https://dl-mirror.dolphin-emu.org/4.0/dolphin-emu_4.0_amd64.deb" class="btn always-ltr btn-primary ubu"><i class="icon-download-alt"></i> Ubuntu 13.04</a>
+
+
+            </td>
+        </tr>
+        </li>
+    
+        <tr class="infos">
+            <td class="version always-ltr">Dolphin 3.5</td>
+            <td class="reldate">9 years ago</td>
+            <td class="description"></td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/releases/dolphin-3.5-x64.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/releases/dolphin-3.5-x86.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x86</a>
+
+<a href="https://dl.dolphin-emu.org/releases/dolphin-3.5.dmg" class="btn always-ltr btn-primary osx"><i class="icon-download-alt"></i> Mac OS X</a>
+
+
+            </td>
+        </tr>
+        </li>
+    
+        <tr class="infos">
+            <td class="version always-ltr">Dolphin 3.0</td>
+            <td class="reldate">10 years, 6 months ago</td>
+            <td class="description"></td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                
+
+
+<a href="https://dl.dolphin-emu.org/releases/dolphin-3.0-x64.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x64</a>
+
+<a href="https://dl.dolphin-emu.org/releases/dolphin-3.0-x86.exe" class="btn always-ltr btn-primary win"><i class="icon-download-alt"></i> Windows x86</a>
+
+<a href="https://dl.dolphin-emu.org/releases/dolphin-3.0-osx.dmg" class="btn always-ltr btn-primary osx"><i class="icon-download-alt"></i> Mac OS X</a>
+
+
+            </td>
+        </tr>
+        </li>
+    
+    </tbody>
+</table>
+</div>
+
+<div id="other-linux">
+    <h1>Linux distributions</h1>
+    <p>Ubuntu users can install a PPA
+    for development and stable versions of Dolphin here: <a href="https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu">Installing Dolphin</a>
+    </p>
+    <p>Users of other Linux distributions can look here to compile Dolphin: <a href="https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux">Building Dolphin on Linux</a>
+    </p>
+</div>
+
+<div id="download-source">
+    <h1>Source code</h1>
+
+    <p>
+    The latest version of the Dolphin source code can be downloaded from the
+    project Git repository.
+    </p>
+
+    <pre class="always-ltr">
+    $ git clone https://github.com/dolphin-emu/dolphin.git</pre>
+
+    <p>
+    You can also <a href="https://github.com/dolphin-emu/dolphin">browse the current version of the source code</a>.
+    </p>
+
+</div>
+
+<div id="report-bugs">
+    <h1>Reporting bugs</h1>
+
+    <p>
+    For reporting bugs please go to <a href="https://bugs.dolphin-emu.org/projects/emulator/issues">the issue tracker</a>.
+    Before creating a new issue, make sure to try a recent development build and search the existing issues.
+    </p>
+</div>
+
+
+        </div>
+
+        <footer>
+        <p class="footer-text">
+            &copy; Dolphin Emulator Project -
+            <a href="https://github.com/dolphin-emu/www">Website Source Code</a> -
+            <a href="/docs/privacy/">Privacy Policy</a>
+        </p>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://dolphin-emu.org/m/static/js/bootstrap.min.cfe18215d149.js"></script>
+        
+        
+    </body>
+</html>
+
+
+<link id="theme-link" rel="stylesheet" href="./lightDolphin.css">
+<link rel="stylesheet" href="./oreoDolphin.css">
+<script src="./toggleMode.js"></script>

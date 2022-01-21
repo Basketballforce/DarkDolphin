@@ -1,0 +1,2616 @@
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dolphin Emulator - Last entries</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Latest news for Dolphin Emulator">
+
+        
+        
+        <meta property="og:site_name" content="Dolphin Emulator" />
+        <meta property="fb:admins" content="1064682820" />
+
+        <link rel="shortcut icon" href="https://dolphin-emu.org/m/static/img/favicon.0885422b72c1.ico" />
+
+        <link rel="alternate" type="application/atom+xml" title="Latest blog articles" href="/blog/feeds/" />
+
+        
+            
+            <link rel="alternate" hreflang="ast" href="//ast.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ms-MY" href="//ms.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ca" href="//ca.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cs" href="//cs.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cy" href="//cy.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="da" href="//da.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="de" href="//de.dolphin-emu.org/blog/" />
+            
+        
+            
+        
+            
+            <link rel="alternate" hreflang="es" href="//es.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="el" href="//el.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="fr" href="//fr.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="gl" href="//gl.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="it" href="//it.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="hu" href="//hu.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nl" href="//nl.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nb" href="//nb.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pl" href="//pl.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt" href="//pt.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt-BR" href="//br.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ru" href="//ru.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="sv" href="//sv.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="tr" href="//tr.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="zh-CN" href="//cn.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ja" href="//ja.dolphin-emu.org/blog/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ko" href="//ko.dolphin-emu.org/blog/" />
+            
+        
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap.min.9e0acbc8a914.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap-theme.min.c1c924a4f6b3.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/dolphin.d9d1550ceb37.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/sprites/nav.fae7f1660efd.css" rel="stylesheet">
+        
+        
+
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34036954-1']);
+          _gaq.push(['_setDomainName', 'dolphin-emu.org']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          window.google_analytics_uacct = "UA-34036954-1";
+        </script>
+        
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/highcharts.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/modules/data.js"></script>
+        <script>
+          var CHART_ID = 0;
+          function addChart(options) {
+            var this_id = CHART_ID++;
+            document.write('<div id="chart' + CHART_ID + '"></div>');
+            options['credits'] = false;
+            options['chart'] = options['chart'] || {};
+            options['chart']['style'] = options['chart']['style'] || {};
+            options['chart']['style']['fontFamily'] = 'Helvetica Neue,Helvetica,Arial,sans-serif';
+            Highcharts.chart("chart" + CHART_ID, options);
+          }
+          window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "content": {
+                "message": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services.",
+                "link": "Learn more",
+                "href": "https://cookiesandyou.com/",
+              },
+              "palette": {
+                "popup": {
+                  "background": "#000"
+                },
+                "button": {
+                  "background": "#f1d600"
+                }
+              }
+            })
+          });
+        </script>
+    </head>
+
+    <body>
+        
+
+        <div id="navbar-dolphin" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" id="hamburger" href="/"><img src="https://dolphin-emu.org/m/static/img/logo.fefed4054d1c.png" height="32" alt="Dolphin Emulator"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-left">
+                        <li><a href="/download.html">Download</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/media.html">Screenshots</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/guides.html">Guides</a></li>
+                        <li><a href="/compat.html">Compatibility</a></li>
+                        <li><a href="https://forums.dolphin-emu.org/">Forum</a></li>
+                        <li><a href="https://wiki.dolphin-emu.org/">Wiki</a></li>
+                        <li id="lastNavbarLi"><a href="https://github.com/dolphin-emu/dolphin">Code</a></li>
+                        <span id="sunMoon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-en"></div> <span>English</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+                                <li><a href="//ast.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-ast"></div><span dir="ltr">Asturianu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ms.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-ms"></div><span dir="ltr">Bahasa Melayu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ca.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-ca"></div><span dir="ltr">Català</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cs.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-cs"></div><span dir="ltr">Česky</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cy.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-cy"></div><span dir="ltr">Cymraeg</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//da.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-da"></div><span dir="ltr">Dansk</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//de.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-de"></div><span dir="ltr">Deutsch</span></a></li>
+                                
+                            
+                                
+                            
+                                
+                                <li><a href="//es.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-es"></div><span dir="ltr">Español</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//el.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-el"></div><span dir="ltr">Ελληνικά</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//fr.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-fr"></div><span dir="ltr">Français</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//gl.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-gl"></div><span dir="ltr">Galego</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//it.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-it"></div><span dir="ltr">Italiano</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//hu.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-hu"></div><span dir="ltr">Magyar</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nl.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-nl"></div><span dir="ltr">Nederlands</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nb.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-nb"></div><span dir="ltr">Norsk (Bokmål)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pl.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-pl"></div><span dir="ltr">Polski</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pt.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-pt"></div><span dir="ltr">Português</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//br.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-br"></div><span dir="ltr">Português (Brasil)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ru.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-ru"></div><span dir="ltr">Русский</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//sv.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-sv"></div><span dir="ltr">Svenska</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//tr.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-tr"></div><span dir="ltr">Türkçe</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cn.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-cn"></div><span dir="ltr">中文(中国)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ja.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-ja"></div><span dir="ltr">日本語</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ko.dolphin-emu.org/blog/?nocr=true"><div class="flag sprite-nav-ko"></div><span dir="ltr">한국어</span></a></li>
+                                
+                            
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="container">
+            
+            
+
+<div class="row">
+    <div class="col-md-9 col-md-push-3" style="margin-top: 1em">
+
+        
+  
+  <ol class="breadcrumb">
+  
+  <li>
+    
+    <a href="/blog/" title="Blog">Blog</a>
+    
+  </li>
+  
+</ol>
+
+
+        <a href="/blog/feeds/" class="rss-tag pull-right" title="RSS feed of the latest articles"><i class="icon-rss"></i></a>
+        
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+<div id="entry-227" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/11/13/dolphin-progress-report-september-and-october-2021/" title="Dolphin Progress Report: September and October 2021" rel="bookmark">
+        Dolphin Progress Report: September and October 2021
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/MayImilae/" class="fn url nickname" rel="author"
+           title="Show all MayImilae's entries">MayImilae</a></span>, 
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-11-13T08:36:31+01:00">Nov. 13, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-11-14T08:27:55.138024+01:00">Nov. 14, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/6B/"
+       title="Short URL to Dolphin Progress Report: September and October 2021"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2021-september/progressreportheader-oct2021.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/progress-report/2021-september/progressreportheader-oct2021mini.jpg"/>
+</header><p>It's the beginning of the month and time for another Dolphin Progress Report!  ...That line doesn't exactly work when it's midway through the month, huh?  This Progress Report ended up being a very technically challenging report to write with several huge rabbit holes that go through the history of Dolphin and the games themselves.  The first rabbit hole showcases TMEM, the GameCube and Wii's texture cache. Dolphin's approach to emulating this bit of the hardware has been to effectively ignore it exists. Trying to even <em>begin</em> to rectify the problems with this approach and explain the reasoning behind why it <em>sort of</em> wasn't emulated go very, very deep. This Progress Report also contains collaboration with the <a href="https://pcsx2.net/">PCSX2</a> development team as they helped us understand some of the behaviors of Floating Point Math on the PlayStation 2.   The fact that the PlayStation 2's floating point behaviors mattered to us for this Progress Report <em>should</em> tell you the kinds of things we were up against when writing up the changes.</p><p>If that wasn't enough, Dolphin also welcomed support for a wealth of mods through support for <strong>Riivolution</strong>.  An easy to use GUI for launching Riivolution mods was added both to desktop Dolphin builds <em>and</em> Android.  Speaking of Android, users may have noticed we pushed out an early beta last month.  This beta was mostly to showcase and let users on the Play Store try out the newly finished Cheat GUI!  We'll finally showcase that after a lengthy delay between when that extra beta was pushed and this Progress Report.  While it's not related to Dolphin <em>directly</em>, Apple released the new M1 Max and we got our hands on one to see how it stacks up against the M1 with some rather interesting performance numbers at the end of the report.</p><p>With that out of the way, there's no point in delaying things any further.  Please enjoy these rather lengthy Notable Changes!</p>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/11/13/dolphin-progress-report-september-and-october-2021/"
+         title="Continue reading Dolphin Progress Report: September and October 2021"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    <h4>Blog series</h4>
+    
+    <p>This article is number 69 within the blog series
+    <a href="/blog/series%23series-1"><em>Dolphin Progress Report</em></a>.
+    
+    
+      <a href="/blog/2021/09/07/dolphin-progress-report-august-2021/">‹ Previous article in series</a>
+      
+      
+    </p>
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/android/"
+         title="Show all entries tagged by android"
+         rel="tag">android</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/cheats/"
+         title="Show all entries tagged by cheats"
+         rel="tag">cheats</a></li>
+      
+      <li><a href="/blog/tags/mac/"
+         title="Show all entries tagged by mac"
+         rel="tag">mac</a></li>
+      
+      <li><a href="/blog/tags/new%20feature/"
+         title="Show all entries tagged by new feature"
+         rel="tag">new feature</a></li>
+      
+      <li><a href="/blog/tags/performance/"
+         title="Show all entries tagged by performance"
+         rel="tag">performance</a></li>
+      
+      <li><a href="/blog/tags/progress%20report/"
+         title="Show all entries tagged by progress report"
+         rel="tag">progress report</a></li>
+      
+      <li><a href="/blog/tags/technical/"
+         title="Show all entries tagged by technical"
+         rel="tag">technical</a></li>
+      
+      <li><a href="/blog/tags/ui/"
+         title="Show all entries tagged by ui"
+         rel="tag">ui</a></li>
+      
+      <li><a href="/blog/tags/video/"
+         title="Show all entries tagged by video"
+         rel="tag">video</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-226" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/09/07/dolphin-progress-report-august-2021/" title="Dolphin Progress Report: August 2021" rel="bookmark">
+        Dolphin Progress Report: August 2021
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/MayImilae/" class="fn url nickname" rel="author"
+           title="Show all MayImilae's entries">MayImilae</a></span>, 
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-09-07T12:39:35+02:00">Sept. 7, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-09-07T23:59:21.514950+02:00">Sept. 7, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/6A/"
+       title="Short URL to Dolphin Progress Report: August 2021"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2021-august/progressreportheader-august2021.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/progress-report/2021-august/progressreportheader-august2021mini.jpg"/>
+</header><p>Many gaming communities over the years have reached out to thank emulator developers for their efforts.  Emulators are an important part of many classic game communities and give players access to features like netplay multiplayer, modding, and savestates, while also opening up the doors to enhancements not possible on console.  Sometimes it's simply more convenient to use an emulator that runs on your desktop, tablet, or phone rather than to dig out and hook up the original console every time you want to play one of your favorite games.  However, it's important to state that our relationship with gaming communities is mutual, and without the help of players and fans, there's no way we could handle maintaining a library of thousands of games.</p><p>In this Progress Report, the gaming communities were the direct catalyst to many of the changes.  They went on difficult debugging adventures, caught small issues that would be invisible to anyone who wasn't extremely familiar with the game, and even came up with patches to make games friendlier to emulator enhancements.  All of these contributions, even if it's not code, are appreciated and help make Dolphin what it is today. </p><p>So, without further delay, let's get started with the August Progress Report!  Enjoy.</p>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/09/07/dolphin-progress-report-august-2021/"
+         title="Continue reading Dolphin Progress Report: August 2021"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    <h4>Blog series</h4>
+    
+    <p>This article is number 68 within the blog series
+    <a href="/blog/series%23series-1"><em>Dolphin Progress Report</em></a>.
+    
+    
+      <a href="/blog/2021/08/01/dolphin-progress-report-june-and-july-2021/">‹ Previous article in series</a>
+      /
+      <a href="/blog/2021/11/13/dolphin-progress-report-september-and-october-2021/">Next article in series ›</a>
+    </p>
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/Graphics/"
+         title="Show all entries tagged by Graphics"
+         rel="tag">Graphics</a></li>
+      
+      <li><a href="/blog/tags/JIT/"
+         title="Show all entries tagged by JIT"
+         rel="tag">JIT</a></li>
+      
+      <li><a href="/blog/tags/Netplay/"
+         title="Show all entries tagged by Netplay"
+         rel="tag">Netplay</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/performance/"
+         title="Show all entries tagged by performance"
+         rel="tag">performance</a></li>
+      
+      <li><a href="/blog/tags/progress%20report/"
+         title="Show all entries tagged by progress report"
+         rel="tag">progress report</a></li>
+      
+      <li><a href="/blog/tags/speedrun/"
+         title="Show all entries tagged by speedrun"
+         rel="tag">speedrun</a></li>
+      
+      <li><a href="/blog/tags/technical/"
+         title="Show all entries tagged by technical"
+         rel="tag">technical</a></li>
+      
+      <li><a href="/blog/tags/video/"
+         title="Show all entries tagged by video"
+         rel="tag">video</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-225" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/08/01/dolphin-progress-report-june-and-july-2021/" title="Dolphin Progress Report: June and July 2021" rel="bookmark">
+        Dolphin Progress Report: June and July 2021
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-08-01T00:04:05+02:00">Aug. 1, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-08-01T00:25:16.115100+02:00">Aug. 1, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/69/"
+       title="Short URL to Dolphin Progress Report: June and July 2021"
+       rel="shortlink">Short link</a>
+    
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2021-july/progressreportheader-july2021.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/progress-report/2021-july/progressreportheader-july2021mini.jpg"/>
+</header><p>Emulation is often seen as this suspect gray area of gaming that is tolerated but always on the edge.  There's a lot of negativity and questions around the merit and purpose of emulation.  In contrast to that narrative, the overwhelmingly positive reaction to some of the features added the last few months, including heartfelt reactions from users, make all of the challenges and struggles so much easier.</p><p>As we drift further from the heyday of the GameCube and Wii, we've been seeing a greater impact not only on the past generations of gamers, but the current one.  It was heartwarming to see long-time users able to play <a href="https://wiki.dolphin-emu.org/index.php?title=The_Legend_of_Zelda:_Four_Swords_Adventures">Four Swords Adventures</a> with their kids or friends across the world.  The gratitude we received from users finally able to try previously hard-to-access features in their favorite games was so appreciated.  We love these games and consoles the same as you, and we want to make sure that they live on.</p><p>Sometimes with all the negativity in emulation, it's refreshing to have something that makes both the developers and the users happy.  And while we'd love to revel in past accomplishments, there's still so much more work to be done.  We graciously thank everyone for their kind words over the past few months, and hope you continue to enjoy using Dolphin Emulator.  With that said, it is about time that we get started with the June and July Progress Report.</p>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/08/01/dolphin-progress-report-june-and-july-2021/"
+         title="Continue reading Dolphin Progress Report: June and July 2021"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    <h4>Blog series</h4>
+    
+    <p>This article is number 67 within the blog series
+    <a href="/blog/series%23series-1"><em>Dolphin Progress Report</em></a>.
+    
+    
+      <a href="/blog/2021/06/06/dolphin-progress-report-april-and-may-2021/">‹ Previous article in series</a>
+      /
+      <a href="/blog/2021/09/07/dolphin-progress-report-august-2021/">Next article in series ›</a>
+    </p>
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/ARM/"
+         title="Show all entries tagged by ARM"
+         rel="tag">ARM</a></li>
+      
+      <li><a href="/blog/tags/GBA/"
+         title="Show all entries tagged by GBA"
+         rel="tag">GBA</a></li>
+      
+      <li><a href="/blog/tags/JIT/"
+         title="Show all entries tagged by JIT"
+         rel="tag">JIT</a></li>
+      
+      <li><a href="/blog/tags/Qt/"
+         title="Show all entries tagged by Qt"
+         rel="tag">Qt</a></li>
+      
+      <li><a href="/blog/tags/Wiimote/"
+         title="Show all entries tagged by Wiimote"
+         rel="tag">Wiimote</a></li>
+      
+      <li><a href="/blog/tags/android/"
+         title="Show all entries tagged by android"
+         rel="tag">android</a></li>
+      
+      <li><a href="/blog/tags/audio/"
+         title="Show all entries tagged by audio"
+         rel="tag">audio</a></li>
+      
+      <li><a href="/blog/tags/ax-hle/"
+         title="Show all entries tagged by ax-hle"
+         rel="tag">ax-hle</a></li>
+      
+      <li><a href="/blog/tags/bounding%20box/"
+         title="Show all entries tagged by bounding box"
+         rel="tag">bounding box</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/controller/"
+         title="Show all entries tagged by controller"
+         rel="tag">controller</a></li>
+      
+      <li><a href="/blog/tags/dsp-hle/"
+         title="Show all entries tagged by dsp-hle"
+         rel="tag">dsp-hle</a></li>
+      
+      <li><a href="/blog/tags/dvd%20timings/"
+         title="Show all entries tagged by dvd timings"
+         rel="tag">dvd timings</a></li>
+      
+      <li><a href="/blog/tags/mac/"
+         title="Show all entries tagged by mac"
+         rel="tag">mac</a></li>
+      
+      <li><a href="/blog/tags/memory%20card/"
+         title="Show all entries tagged by memory card"
+         rel="tag">memory card</a></li>
+      
+      <li><a href="/blog/tags/new%20feature/"
+         title="Show all entries tagged by new feature"
+         rel="tag">new feature</a></li>
+      
+      <li><a href="/blog/tags/progress%20report/"
+         title="Show all entries tagged by progress report"
+         rel="tag">progress report</a></li>
+      
+      <li><a href="/blog/tags/rendering/"
+         title="Show all entries tagged by rendering"
+         rel="tag">rendering</a></li>
+      
+      <li><a href="/blog/tags/ui/"
+         title="Show all entries tagged by ui"
+         rel="tag">ui</a></li>
+      
+      <li><a href="/blog/tags/updater/"
+         title="Show all entries tagged by updater"
+         rel="tag">updater</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-224" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/07/21/integrated-gba/" title="mGBA Integration: Introducing the Integrated GBA" rel="bookmark">
+        mGBA Integration: Introducing the Integrated GBA
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-07-21T08:47:26+02:00">July 21, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-07-28T16:34:11.381879+02:00">July 28, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/68/"
+       title="Short URL to mGBA Integration: Introducing the Integrated GBA"
+       rel="shortlink">Short link</a>
+    
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/integratedgba/mgbaintegrationheader.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/integratedgba/mgbaintegrationheadermini.jpg"/>
+</header><p>Your eyes are not deceiving you.  As of <a href="https://dolphin-emu.org/download/dev/a1e806ed76e6746259a730a5db82052b53f084f1/">5.0-14690</a>, Dolphin now has <a href="https://mgba.io/">mGBA</a> directly built into it as a new way to handle Game Boy Advance connectivity with GameCube titles.  For those who don't know, mGBA is the most renowned and accurate GBA emulator of this era and has been rapidly improving since its inception.  Recently, <a href="https://dolphin-emu.org/blog/2021/04/24/mgba-and-dolphin-connectivity/">we wrote</a> about <a href="https://mgba.io/2021/03/28/mgba-0.9.0/">mGBA adding support for our TCP GBA protocol</a>, but this is something completely new.  With integration and synchronization work done by <strong><a href="https://github.com/bonta0">bonta</a></strong>, connecting your favorite GameCube titles with a Game Boy Advance for multiplayer and other bonus features is now greatly simplified.  Dubbed the <strong>Integrated GBA</strong>, a stripped-down version of mGBA will boot up alongside Dolphin when set to one or more controller ports.  These mGBA instances are clock-synced to GameCube emulation for impeccable connection stability.  By bringing these two emulators together in one package, GBA connectivity features now work with popular features like savestates, input recordings, and <strong>netplay</strong>!  All of this comes with the added bonus of improved performance and compatibility.  If you don't believe us, check it out yourself!</p><div class="media-block full-width">
+<figure>
+<div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="" src="https://www.youtube.com/embed/bs--wWcFb9o"></iframe></div>
+<figcaption>Introducing the Integrated GBA!</figcaption>
+</figure>
+</div>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/07/21/integrated-gba/"
+         title="Continue reading mGBA Integration: Introducing the Integrated GBA"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/GBA/"
+         title="Show all entries tagged by GBA"
+         rel="tag">GBA</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/linking/"
+         title="Show all entries tagged by linking"
+         rel="tag">linking</a></li>
+      
+      <li><a href="/blog/tags/multiplayer/"
+         title="Show all entries tagged by multiplayer"
+         rel="tag">multiplayer</a></li>
+      
+      <li><a href="/blog/tags/netplay/"
+         title="Show all entries tagged by netplay"
+         rel="tag">netplay</a></li>
+      
+      <li><a href="/blog/tags/sonic/"
+         title="Show all entries tagged by sonic"
+         rel="tag">sonic</a></li>
+      
+      <li><a href="/blog/tags/video/"
+         title="Show all entries tagged by video"
+         rel="tag">video</a></li>
+      
+      <li><a href="/blog/tags/zelda/"
+         title="Show all entries tagged by zelda"
+         rel="tag">zelda</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-221" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/06/06/dolphin-progress-report-april-and-may-2021/" title="Dolphin MEGA Progress Report: April and May 2021" rel="bookmark">
+        Dolphin MEGA Progress Report: April and May 2021
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>, 
+      
+      <span class="vcard author">
+        <a href="/blog/authors/MayImilae/" class="fn url nickname" rel="author"
+           title="Show all MayImilae's entries">MayImilae</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-06-06T08:05:58+02:00">June 6, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-07-31T05:27:24.891270+02:00">July 31, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/65/"
+       title="Short URL to Dolphin MEGA Progress Report: April and May 2021"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2021-may/progressreportheader-may2021.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/progress-report/2021-may/progressreportheader-may2021mini.jpg"/>
+</header><p>After finishing up the <a href="https://dolphin-emu.org/blog/2021/05/24/temptation-of-the-apple-dolphin-on-macos-m1/">macOS M1 article</a> the blog staff took a little break.  Then they saw the date.</p><div class="media-block narrower">
+<figure>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2021-may/ohshi-.jpg"/>
+<figcaption>Oh shi-</figcaption>
+</figure>
+</div><p>Upon looking at the actual changelog, however, something became readily apparent: this wasn't going to be just a Progress Report; this was going to be a MEGA Progress Report.  The long rumored time era of <em>developers merging everything at once</em> had finally come to pass.  We have graphical fixes for <a href="https://wiki.dolphin-emu.org/index.php?title=Super_Mario_Galaxy">Super Mario Galaxy</a> and <a href="https://wiki.dolphin-emu.org/index.php?title=Luigi%27s_Mansion">Luigi's Mansion</a>, crash fixes for <a href="https://wiki.dolphin-emu.org/index.php?title=Star_Wars_Rogue_Squadron_III:_Rebel_Strike">Star Wars: Rogue Squadron III</a>, <a href="https://wiki.dolphin-emu.org/index.php?title=Xenoblade_Chronicles">Xenoblade Chronicles</a>, <a href="https://wiki.dolphin-emu.org/index.php?title=Ultimate_Spider-Man">Ultimate Spider-Man</a>, <a href="https://wiki.dolphin-emu.org/index.php?title=The_Legend_of_Zelda:_Skyward_Sword">The Legend of Zelda: Skyward Sword</a> (AArch64), and new features that make playing games more pleasant!  And about AArch64, there are a litany of optimizations and fixes that will change things across most of the library.</p><p>And we could go on: Bounding Box, Interpreter, GBA to GCN connectivity, GPU Syncing, Mouse Locking, and <em>still more</em>!  There's even a lengthy dev diary at the end for good measure explaining how the great mystery of  <a href="https://wiki.dolphin-emu.org/index.php?title=Pok%C3%A9mon_Box:_Ruby_%26_Sapphire">Pokemon Box</a>'s was finally solved.  The only way to do it justice is to do it right.  So buckle up and get ready for the April and May <strong>MEGA</strong> Progress Report.</p>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/06/06/dolphin-progress-report-april-and-may-2021/"
+         title="Continue reading Dolphin MEGA Progress Report: April and May 2021"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    <h4>Blog series</h4>
+    
+    <p>This article is number 66 within the blog series
+    <a href="/blog/series%23series-1"><em>Dolphin Progress Report</em></a>.
+    
+    
+      <a href="/blog/2021/04/05/dolphin-progress-report-february-and-march-2021/">‹ Previous article in series</a>
+      /
+      <a href="/blog/2021/08/01/dolphin-progress-report-june-and-july-2021/">Next article in series ›</a>
+    </p>
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/DevDiary/"
+         title="Show all entries tagged by DevDiary"
+         rel="tag">DevDiary</a></li>
+      
+      <li><a href="/blog/tags/Factor5/"
+         title="Show all entries tagged by Factor5"
+         rel="tag">Factor5</a></li>
+      
+      <li><a href="/blog/tags/GBA/"
+         title="Show all entries tagged by GBA"
+         rel="tag">GBA</a></li>
+      
+      <li><a href="/blog/tags/JIT/"
+         title="Show all entries tagged by JIT"
+         rel="tag">JIT</a></li>
+      
+      <li><a href="/blog/tags/android/"
+         title="Show all entries tagged by android"
+         rel="tag">android</a></li>
+      
+      <li><a href="/blog/tags/arm/"
+         title="Show all entries tagged by arm"
+         rel="tag">arm</a></li>
+      
+      <li><a href="/blog/tags/bounding%20box/"
+         title="Show all entries tagged by bounding box"
+         rel="tag">bounding box</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/performance/"
+         title="Show all entries tagged by performance"
+         rel="tag">performance</a></li>
+      
+      <li><a href="/blog/tags/progress%20report/"
+         title="Show all entries tagged by progress report"
+         rel="tag">progress report</a></li>
+      
+      <li><a href="/blog/tags/technical/"
+         title="Show all entries tagged by technical"
+         rel="tag">technical</a></li>
+      
+      <li><a href="/blog/tags/video/"
+         title="Show all entries tagged by video"
+         rel="tag">video</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-222" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/05/24/temptation-of-the-apple-dolphin-on-macos-m1/" title="Temptation of the Apple: Dolphin on macOS M1" rel="bookmark">
+        Temptation of the Apple: Dolphin on macOS M1
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>, 
+      
+      <span class="vcard author">
+        <a href="/blog/authors/MayImilae/" class="fn url nickname" rel="author"
+           title="Show all MayImilae's entries">MayImilae</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-05-24T12:47:09+02:00">May 24, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-06-03T10:51:05.699357+02:00">June 3, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/66/"
+       title="Short URL to Temptation of the Apple: Dolphin on macOS M1"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=61567" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header> <img src="https://dolphin-emu.org/m/user/blog/macm1/m1header.jpg" /> <img class="mini" src="https://dolphin-emu.org/m/user/blog/macm1/m1headermini.jpg" /> </header> <p>From the announcement made on November 10th, 2020, users have had high hopes for the new Apple M1 devices. With its powerful Apple Silicon processor smashing benchmarks all over the place, users and developers were both asking if a native Dolphin build would be possible. Now we have the answer.</p> <p>Apple's M1 hardware is incredibly powerful and excels at running Dolphin. This announcement has been in the works for some time, eagle eyed users may have noticed that earlier this month macOS builds were now being designated as "Intel". That's because …
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/05/24/temptation-of-the-apple-dolphin-on-macos-m1/"
+         title="Continue reading Temptation of the Apple: Dolphin on macOS M1"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=61567" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/CI/"
+         title="Show all entries tagged by CI"
+         rel="tag">CI</a></li>
+      
+      <li><a href="/blog/tags/JIT/"
+         title="Show all entries tagged by JIT"
+         rel="tag">JIT</a></li>
+      
+      <li><a href="/blog/tags/Netplay/"
+         title="Show all entries tagged by Netplay"
+         rel="tag">Netplay</a></li>
+      
+      <li><a href="/blog/tags/arm/"
+         title="Show all entries tagged by arm"
+         rel="tag">arm</a></li>
+      
+      <li><a href="/blog/tags/mac/"
+         title="Show all entries tagged by mac"
+         rel="tag">mac</a></li>
+      
+      <li><a href="/blog/tags/performance/"
+         title="Show all entries tagged by performance"
+         rel="tag">performance</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-216" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/04/24/mgba-and-dolphin-connectivity/" title="mGBA and Dolphin Connectivity" rel="bookmark">
+        mGBA and Dolphin Connectivity
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-04-24T05:04:43+02:00">April 24, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-04-24T05:42:55.285095+02:00">April 24, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/60/"
+       title="Short URL to mGBA and Dolphin Connectivity"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=61398" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header> <img src="https://dolphin-emu.org/m/user/blog/MGBA-Dolphin/mgbaheader.jpg" /> <img class="mini" src="https://dolphin-emu.org/m/user/blog/MGBA-Dolphin/mgbaheadermini.jpg" /> </header> <p>Connecting multiple emulators together is a complicated and difficult task. This task becomes even <em>more</em> difficult when you consider connecting two <em>different</em> emulators together. You have to understand two different consoles, how these systems communicate with each other, adapt to latency restrictions, and have expertise across two different projects. In the case of GameCube to Game Boy Advance connectivity, we are incredibly lucky to have had talented developers from both GBA and GameCube circles create our current protocol for supporting "GBA" controllers. Dolphin's GBA connectivity has stagnated for some time with …
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/04/24/mgba-and-dolphin-connectivity/"
+         title="Continue reading mGBA and Dolphin Connectivity"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=61398" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/GBA/"
+         title="Show all entries tagged by GBA"
+         rel="tag">GBA</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/video/"
+         title="Show all entries tagged by video"
+         rel="tag">video</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-217" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/04/05/dolphin-progress-report-february-and-march-2021/" title="Dolphin Progress Report: February and March 2021" rel="bookmark">
+        Dolphin Progress Report: February and March 2021
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>, 
+      
+      <span class="vcard author">
+        <a href="/blog/authors/MayImilae/" class="fn url nickname" rel="author"
+           title="Show all MayImilae's entries">MayImilae</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-04-05T10:59:51+02:00">April 5, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-04-05T12:34:22.692008+02:00">April 5, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/61/"
+       title="Short URL to Dolphin Progress Report: February and March 2021"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2021-march/progressreportheader-Mar2021.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/progress-report/2021-march/progressreportheader-Mar2021mini.jpg"/>
+</header><p>Sometimes the introductions to the Progress Reports are the hardest part to write.  The Dolphin Blog has been running for many years, and we've gone through hundreds of changes that affect thousands of titles.  We've gone into detail on all kinds of games, from top sellers on the consoles to obscure titles that most of us wouldn't have known existed if not for some random bug report.  Despite all of these exciting changes, despite seemingly seeing it all over the years, we still see things that amaze us.  The GameCube and Wii library still have a few tricks up their sleeves and developers continue to come up with crazy new optimizations and features that keep pushing Dolphin forward.</p><p>It's hard to express how happy we are to not only be writing these articles, but still have interesting things to write about.  In fact, we were working on a feature article spotlighting some new features, but things were unfortunately delayed.   As such, this month's Progress Report is a little hurried.  What exactly got delayed?  Well, we'll have more on that later this month.  For now... please enjoy this slightly belated Dolphin Progress Report!</p>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/04/05/dolphin-progress-report-february-and-march-2021/"
+         title="Continue reading Dolphin Progress Report: February and March 2021"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    <h4>Blog series</h4>
+    
+    <p>This article is number 65 within the blog series
+    <a href="/blog/series%23series-1"><em>Dolphin Progress Report</em></a>.
+    
+    
+      <a href="/blog/2021/02/11/dolphin-progress-report-december-2020-and-january-2021/">‹ Previous article in series</a>
+      /
+      <a href="/blog/2021/06/06/dolphin-progress-report-april-and-may-2021/">Next article in series ›</a>
+    </p>
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/Devdiary/"
+         title="Show all entries tagged by Devdiary"
+         rel="tag">Devdiary</a></li>
+      
+      <li><a href="/blog/tags/Software%20Renderer/"
+         title="Show all entries tagged by Software Renderer"
+         rel="tag">Software Renderer</a></li>
+      
+      <li><a href="/blog/tags/android/"
+         title="Show all entries tagged by android"
+         rel="tag">android</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/new%20feature/"
+         title="Show all entries tagged by new feature"
+         rel="tag">new feature</a></li>
+      
+      <li><a href="/blog/tags/progress%20report/"
+         title="Show all entries tagged by progress report"
+         rel="tag">progress report</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-215" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2021/02/11/dolphin-progress-report-december-2020-and-january-2021/" title="Dolphin Progress Report: December 2020 and January 2021" rel="bookmark">
+        Dolphin Progress Report: December 2020 and January 2021
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/MayImilae/" class="fn url nickname" rel="author"
+           title="Show all MayImilae's entries">MayImilae</a></span>, 
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2021-02-11T06:02:46+01:00">Feb. 11, 2021</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2021-04-06T11:13:49.575586+02:00">April 6, 2021</abbr>
+    / <a href="https://dolphin-emu.org/blog/5Z/"
+       title="Short URL to Dolphin Progress Report: December 2020 and January 2021"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2020-december/progressreportheader-Dec2020.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/progress-report/2020-december/progressreportheader-Dec2020mini.jpg"/>
+</header><p>Welcome to the Dolphin Progress Report for December 2020 and January 2021!  Things ended up running a little behind for this report due to some technical details that we needed to hammer out for a few of these entries.  We on the blog team are familiar with the emulator, however there are a lot of technical details that are simply beyond our expertise.  Going from things like the AArch64 JIT to GUI changes to IOS updates to game patches that go into low-level hardware behavior is enough to make anyone's head spin!  More often than not, we rely on core developers and the authors of a specific change to help us understand what a pull request does so that we can express its purpose accurately here on the blog.  </p><p>With Progress Reports coming at a <em>mostly</em> bimonthly schedule at this point, this means that sometimes authors have moved onto different things or aren't available to talk.  As a blog about emulation, getting these details correct about the various changes and how the emulator works is one of our highest priorities.  So, with that out of the way, we hope you enjoy this <em>belated</em> Dolphin Progress Report!</p>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2021/02/11/dolphin-progress-report-december-2020-and-january-2021/"
+         title="Continue reading Dolphin Progress Report: December 2020 and January 2021"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    <h4>Blog series</h4>
+    
+    <p>This article is number 64 within the blog series
+    <a href="/blog/series%23series-1"><em>Dolphin Progress Report</em></a>.
+    
+    
+      <a href="/blog/2020/12/10/dolphin-progress-report-october-2020/">‹ Previous article in series</a>
+      /
+      <a href="/blog/2021/04/05/dolphin-progress-report-february-and-march-2021/">Next article in series ›</a>
+    </p>
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/DS/"
+         title="Show all entries tagged by DS"
+         rel="tag">DS</a></li>
+      
+      <li><a href="/blog/tags/Ubisoft/"
+         title="Show all entries tagged by Ubisoft"
+         rel="tag">Ubisoft</a></li>
+      
+      <li><a href="/blog/tags/Wiimote/"
+         title="Show all entries tagged by Wiimote"
+         rel="tag">Wiimote</a></li>
+      
+      <li><a href="/blog/tags/android/"
+         title="Show all entries tagged by android"
+         rel="tag">android</a></li>
+      
+      <li><a href="/blog/tags/audio/"
+         title="Show all entries tagged by audio"
+         rel="tag">audio</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/new%20feature/"
+         title="Show all entries tagged by new feature"
+         rel="tag">new feature</a></li>
+      
+      <li><a href="/blog/tags/progress%20report/"
+         title="Show all entries tagged by progress report"
+         rel="tag">progress report</a></li>
+      
+      <li><a href="/blog/tags/technical/"
+         title="Show all entries tagged by technical"
+         rel="tag">technical</a></li>
+      
+      <li><a href="/blog/tags/ui/"
+         title="Show all entries tagged by ui"
+         rel="tag">ui</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div id="entry-214" class="hentry">
+  
+  
+  <div class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/blog/2020/12/10/dolphin-progress-report-october-2020/" title="Dolphin Progress Report: October and November 2020" rel="bookmark">
+        Dolphin Progress Report: October and November 2020
+      </a>
+    </h2>
+    
+    
+    <div class="entry-meta-line">
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        <a href="/blog/authors/MayImilae/" class="fn url nickname" rel="author"
+           title="Show all MayImilae's entries">MayImilae</a></span>, 
+      
+      <span class="vcard author">
+        <a href="/blog/authors/JMC47/" class="fn url nickname" rel="author"
+           title="Show all JMC47's entries">JMC47</a></span>
+      
+      on
+      
+      
+      <abbr class="published" title="2020-12-10T00:44:20+01:00">Dec. 10, 2020</abbr>
+    </p>
+    
+    
+    <p class="entry-last-update">
+      / Last update on <abbr class="updated" title="2020-12-10T07:50:02.517144+01:00">Dec. 10, 2020</abbr>
+    / <a href="https://dolphin-emu.org/blog/5Y/"
+       title="Short URL to Dolphin Progress Report: October and November 2020"
+       rel="shortlink">Short link</a>
+    / <i class="icon-comments"></i> <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">Forum thread</a>
+    </p>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="entry-body">
+    
+    <div class="entry-content">
+      <header>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2020-october/progressreportheader-Oct2020.jpg"/>
+<img class="mini" src="https://dolphin-emu.org/m/user/blog/progress-report/2020-october/progressreportheader-Oct2020mini.jpg"/>
+</header><p>The past two months have been quite busy with a lot of features and fixes spread out between a lot of contributors, new and old.  It's only fitting then that we've seen some important fixes for ancient bugs and new ideas bringing in new features.  Even if the game you've been playing is already running fine, developers are hard at work coming up with ways to make things even better.  Take for instance a new infrastructure that allows Custom Texture Packs to <em>customize</em> what controls show up in games <em>depending on how you've configured your controller in realtime!</em>  Also, getting that perfect angle is a bit easier with the new "virtual notches" system, perfect for difficult platforming challenges in games like <a href="https://wiki.dolphin-emu.org/index.php?title=Super_Mario_Sunshine">Super Mario Sunshine</a>!</p><div class="media-block narrow">
+<figure>
+<img src="https://dolphin-emu.org/m/user/blog/progress-report/2020-october/teaser.jpg"/>
+<figcaption>There's something missing in this picture... or is there?!</figcaption>
+</figure>
+</div><p>Enough teasing, we've made you wait long enough.  It's time for the October and November Progress Report!</p>
+
+    
+    
+    <p class="continue-reading">
+      <a href="/blog/2020/12/10/dolphin-progress-report-october-2020/"
+         title="Continue reading Dolphin Progress Report: October and November 2020"
+         rel="bookmark">
+        Continue reading
+      </a>
+    </p>
+    
+    
+
+    </div>
+    
+    
+    <p><i class="icon-comments"></i> You can continue the discussion in the <a href="https://forums.dolphin-emu.org/showthread.php?tid=35067" title="Visit forum thread for this article">forum thread</a> of this article.</p>
+  </div>
+  
+
+  
+  <div class="entry-footer row">
+    <div class="col-md-6">
+    
+    
+    <h4>Blog series</h4>
+    
+    <p>This article is number 63 within the blog series
+    <a href="/blog/series%23series-1"><em>Dolphin Progress Report</em></a>.
+    
+    
+      <a href="/blog/2020/10/05/dolphin-progress-report-july-and-august-2020/">‹ Previous article in series</a>
+      /
+      <a href="/blog/2021/02/11/dolphin-progress-report-december-2020-and-january-2021/">Next article in series ›</a>
+    </p>
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    <div class="entry-tags col-md-3">
+      <h4>Tags</h4>
+      <ul class="tag-cloud">
+      
+      <li><a href="/blog/tags/Feature%20Removal/"
+         title="Show all entries tagged by Feature Removal"
+         rel="tag">Feature Removal</a></li>
+      
+      <li><a href="/blog/tags/bugfix/"
+         title="Show all entries tagged by bugfix"
+         rel="tag">bugfix</a></li>
+      
+      <li><a href="/blog/tags/controller/"
+         title="Show all entries tagged by controller"
+         rel="tag">controller</a></li>
+      
+      <li><a href="/blog/tags/new%20feature/"
+         title="Show all entries tagged by new feature"
+         rel="tag">new feature</a></li>
+      
+      <li><a href="/blog/tags/progress%20report/"
+         title="Show all entries tagged by progress report"
+         rel="tag">progress report</a></li>
+      
+      <li><a href="/blog/tags/ui/"
+         title="Show all entries tagged by ui"
+         rel="tag">ui</a></li>
+      
+      <li><a href="/blog/tags/video/"
+         title="Show all entries tagged by video"
+         rel="tag">video</a></li>
+      
+      </ul>
+    </div>
+    
+    
+    <div class="entry-categories col-md-3">
+      <h4>Categories</h4>
+      
+      
+      <span class="empty">No categories</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+  
+<nav>
+  <ul class="paginator">
+    <li class="index">
+      Page 1 of 11
+    </li>
+
+    
+
+    
+    <li class="page current">
+      
+      1
+      
+    </li>
+    
+    <li class="page">
+      
+      <a href="?page=2"
+         title="Entries page 2">2</a>
+      
+    </li>
+    
+    <li class="page">
+      
+      <a href="?page=3"
+         title="Entries page 3">3</a>
+      
+    </li>
+    
+
+    
+
+    
+    <li class="ellipsis">&hellip;</li>
+    
+    <li class="page">
+      
+      <a href="?page=11"
+         title="Entries page 11">11</a>
+      
+    </li>
+    
+    
+
+    
+    <li class="page next">
+      <a href="?page=2"
+         title="More old entries">&raquo;</a>
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+
+
+
+<h2>Yearly archives</h2>
+<ul>
+  
+  <li>
+    <a href="/blog/2021/" rel="archives">2021</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2020/" rel="archives">2020</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2019/" rel="archives">2019</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2018/" rel="archives">2018</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2017/" rel="archives">2017</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2016/" rel="archives">2016</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2015/" rel="archives">2015</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2014/" rel="archives">2014</a>
+  </li>
+  
+  <li>
+    <a href="/blog/2013/" rel="archives">2013</a>
+  </li>
+  
+</ul>
+
+
+
+
+
+    </div>
+    <div class="col-md-3 col-md-pull-9" style="margin-top: 1em">
+        
+
+<div style="margin-bottom: 1em">
+    <form method="get" action="/blog/search/" role="search">
+        <div class="input-group">
+            <input type="text" placeholder="Search articles" name="pattern" class="form-control" />
+            <span class="input-group-btn">
+                <button type="submit" class="btn">
+                    <i class="icon-search"></i>
+                </button>
+            </span>
+        </div>
+    </form>
+</div>
+
+<div class="well text-center">
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-8646203626363069";
+    /* Dolphin Blog Sidebar Ad */
+    google_ad_slot = "9795528512";
+    google_ad_width = 200;
+    google_ad_height = 200;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+<div class="well">
+    <h4>Blog tags</h4>
+    
+<ul class="tag-cloud">
+  
+  <li>
+    <a href="/blog/tags/3d/"
+       title="2 entries tagged by 3d"
+       class="tag-1">3d</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/4.0/"
+       title="4 entries tagged by 4.0"
+       class="tag-2">4.0</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/5.0/"
+       title="8 entries tagged by 5.0"
+       class="tag-3">5.0</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/60FPS/"
+       title="1 entry tagged by 60FPS"
+       class="tag-1">60FPS</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Accessory/"
+       title="3 entries tagged by Accessory"
+       class="tag-2">Accessory</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/adreno/"
+       title="5 entries tagged by adreno"
+       class="tag-3">adreno</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/amd/"
+       title="1 entry tagged by amd"
+       class="tag-1">amd</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Analysis/"
+       title="2 entries tagged by Analysis"
+       class="tag-1">Analysis</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/android/"
+       title="27 entries tagged by android"
+       class="tag-5">android</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/announcement/"
+       title="4 entries tagged by announcement"
+       class="tag-2">announcement</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/arm/"
+       title="4 entries tagged by arm"
+       class="tag-2">arm</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/ARM/"
+       title="1 entry tagged by ARM"
+       class="tag-1">ARM</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/audio/"
+       title="10 entries tagged by audio"
+       class="tag-4">audio</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/ax-hle/"
+       title="1 entry tagged by ax-hle"
+       class="tag-1">ax-hle</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/BBA/"
+       title="1 entry tagged by BBA"
+       class="tag-1">BBA</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/bounding%20box/"
+       title="2 entries tagged by bounding box"
+       class="tag-1">bounding box</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/bug/"
+       title="1 entry tagged by bug"
+       class="tag-1">bug</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/bugfix/"
+       title="79 entries tagged by bugfix"
+       class="tag-6">bugfix</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/cheats/"
+       title="1 entry tagged by cheats"
+       class="tag-1">cheats</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Cheats/"
+       title="2 entries tagged by Cheats"
+       class="tag-1">Cheats</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/CI/"
+       title="1 entry tagged by CI"
+       class="tag-1">CI</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Commemoration/"
+       title="1 entry tagged by Commemoration"
+       class="tag-1">Commemoration</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/controller/"
+       title="9 entries tagged by controller"
+       class="tag-3">controller</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/D3D/"
+       title="3 entries tagged by D3D"
+       class="tag-2">D3D</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/D3D9/"
+       title="1 entry tagged by D3D9"
+       class="tag-1">D3D9</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Datel/"
+       title="2 entries tagged by Datel"
+       class="tag-1">Datel</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Devdiary/"
+       title="3 entries tagged by Devdiary"
+       class="tag-2">Devdiary</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/DevDiary/"
+       title="1 entry tagged by DevDiary"
+       class="tag-1">DevDiary</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/discord/"
+       title="1 entry tagged by discord"
+       class="tag-1">discord</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/driver/"
+       title="5 entries tagged by driver"
+       class="tag-3">driver</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/DS/"
+       title="1 entry tagged by DS"
+       class="tag-1">DS</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/dsp-hle/"
+       title="1 entry tagged by dsp-hle"
+       class="tag-1">dsp-hle</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/dvd%20timings/"
+       title="1 entry tagged by dvd timings"
+       class="tag-1">dvd timings</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Factor5/"
+       title="12 entries tagged by Factor5"
+       class="tag-4">Factor5</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Feature%20Removal/"
+       title="10 entries tagged by Feature Removal"
+       class="tag-4">Feature Removal</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Foundation/"
+       title="1 entry tagged by Foundation"
+       class="tag-1">Foundation</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/GameCube/"
+       title="1 entry tagged by GameCube"
+       class="tag-1">GameCube</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Gamehacks/"
+       title="1 entry tagged by Gamehacks"
+       class="tag-1">Gamehacks</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/GBA/"
+       title="4 entries tagged by GBA"
+       class="tag-2">GBA</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/gpu/"
+       title="2 entries tagged by gpu"
+       class="tag-1">gpu</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Graphics/"
+       title="10 entries tagged by Graphics"
+       class="tag-4">Graphics</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Hardware/"
+       title="4 entries tagged by Hardware"
+       class="tag-2">Hardware</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/HD/"
+       title="3 entries tagged by HD"
+       class="tag-2">HD</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/hle/"
+       title="1 entry tagged by hle"
+       class="tag-1">hle</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/homebrew/"
+       title="1 entry tagged by homebrew"
+       class="tag-1">homebrew</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/intel/"
+       title="1 entry tagged by intel"
+       class="tag-1">intel</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/JIT/"
+       title="4 entries tagged by JIT"
+       class="tag-2">JIT</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Legal/"
+       title="2 entries tagged by Legal"
+       class="tag-1">Legal</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Licensing/"
+       title="1 entry tagged by Licensing"
+       class="tag-1">Licensing</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/linking/"
+       title="1 entry tagged by linking"
+       class="tag-1">linking</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/mac/"
+       title="6 entries tagged by mac"
+       class="tag-3">mac</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/mali/"
+       title="4 entries tagged by mali"
+       class="tag-2">mali</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/memory%20card/"
+       title="1 entry tagged by memory card"
+       class="tag-1">memory card</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/mesa/"
+       title="2 entries tagged by mesa"
+       class="tag-1">mesa</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/miniupdate/"
+       title="1 entry tagged by miniupdate"
+       class="tag-1">miniupdate</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/multiplayer/"
+       title="1 entry tagged by multiplayer"
+       class="tag-1">multiplayer</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/netplay/"
+       title="1 entry tagged by netplay"
+       class="tag-1">netplay</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Netplay/"
+       title="14 entries tagged by Netplay"
+       class="tag-4">Netplay</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/new%20feature/"
+       title="48 entries tagged by new feature"
+       class="tag-6">new feature</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/nvidia/"
+       title="3 entries tagged by nvidia"
+       class="tag-2">nvidia</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/OGL/"
+       title="3 entries tagged by OGL"
+       class="tag-2">OGL</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Online-play/"
+       title="2 entries tagged by Online-play"
+       class="tag-1">Online-play</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/passthrough/"
+       title="1 entry tagged by passthrough"
+       class="tag-1">passthrough</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Patches/"
+       title="1 entry tagged by Patches"
+       class="tag-1">Patches</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/performance/"
+       title="27 entries tagged by performance"
+       class="tag-5">performance</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/progress%20report/"
+       title="63 entries tagged by progress report"
+       class="tag-6">progress report</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Qt/"
+       title="10 entries tagged by Qt"
+       class="tag-4">Qt</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/qualcomm/"
+       title="4 entries tagged by qualcomm"
+       class="tag-2">qualcomm</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/release/"
+       title="5 entries tagged by release"
+       class="tag-3">release</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/releasecandidate/"
+       title="2 entries tagged by releasecandidate"
+       class="tag-1">releasecandidate</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/rendering/"
+       title="1 entry tagged by rendering"
+       class="tag-1">rendering</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Review/"
+       title="1 entry tagged by Review"
+       class="tag-1">Review</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/shieldtv/"
+       title="1 entry tagged by shieldtv"
+       class="tag-1">shieldtv</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Software%20Renderer/"
+       title="1 entry tagged by Software Renderer"
+       class="tag-1">Software Renderer</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/sonic/"
+       title="1 entry tagged by sonic"
+       class="tag-1">sonic</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/speedrun/"
+       title="1 entry tagged by speedrun"
+       class="tag-1">speedrun</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/stereo/"
+       title="1 entry tagged by stereo"
+       class="tag-1">stereo</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/stereoscopy/"
+       title="2 entries tagged by stereoscopy"
+       class="tag-1">stereoscopy</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/technical/"
+       title="16 entries tagged by technical"
+       class="tag-4">technical</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/ubershaders/"
+       title="3 entries tagged by ubershaders"
+       class="tag-2">ubershaders</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Ubisoft/"
+       title="4 entries tagged by Ubisoft"
+       class="tag-2">Ubisoft</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/ui/"
+       title="15 entries tagged by ui"
+       class="tag-4">ui</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Unlicensed/"
+       title="1 entry tagged by Unlicensed"
+       class="tag-1">Unlicensed</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/updater/"
+       title="1 entry tagged by updater"
+       class="tag-1">updater</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/video/"
+       title="31 entries tagged by video"
+       class="tag-5">video</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/vulkan/"
+       title="5 entries tagged by vulkan"
+       class="tag-3">vulkan</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Wii/"
+       title="7 entries tagged by Wii"
+       class="tag-3">Wii</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/wiimote/"
+       title="1 entry tagged by wiimote"
+       class="tag-1">wiimote</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Wiimote/"
+       title="12 entries tagged by Wiimote"
+       class="tag-4">Wiimote</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/Wind%20Waker/"
+       title="2 entries tagged by Wind Waker"
+       class="tag-1">Wind Waker</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/wx/"
+       title="1 entry tagged by wx"
+       class="tag-1">wx</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/XFB/"
+       title="1 entry tagged by XFB"
+       class="tag-1">XFB</a>
+  </li>
+  
+  <li>
+    <a href="/blog/tags/zelda/"
+       title="1 entry tagged by zelda"
+       class="tag-1">zelda</a>
+  </li>
+  
+</ul>
+
+</div>
+
+<div class="well">
+    <h4>Blog series</h4>
+    <ul class="blog-series">
+
+<li><a href="/blog/series%23series-1">Dolphin Progress Report</a></li>
+
+<li><a href="/blog/series%23series-2">HLE Audio</a></li>
+
+</ul>
+
+    <p class="seemore"><a href="/blog/series">See all »</a></p>
+</div>
+
+    </div>
+</div>
+
+
+
+        </div>
+
+        <footer>
+        <p class="footer-text">
+            &copy; Dolphin Emulator Project -
+            <a href="https://github.com/dolphin-emu/www">Website Source Code</a> -
+            <a href="/docs/privacy/">Privacy Policy</a>
+        </p>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://dolphin-emu.org/m/static/js/bootstrap.min.cfe18215d149.js"></script>
+        
+        
+    </body>
+</html>
+<link id="theme-link" rel="stylesheet" href="./lightDolphin.css">
+<link rel="stylesheet" href="./oreoDolphin.css">
+<script src="./toggleMode.js"></script>

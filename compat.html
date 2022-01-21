@@ -1,0 +1,923 @@
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dolphin Emulator - Compatibility List - page #</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Dolphin Emulator compatibility list contains all the games we tested, sorted by how well they work on the emulator.">
+
+        
+        
+        <meta property="og:site_name" content="Dolphin Emulator" />
+        <meta property="fb:admins" content="1064682820" />
+
+        <link rel="shortcut icon" href="https://dolphin-emu.org/m/static/img/favicon.0885422b72c1.ico" />
+
+        <link rel="alternate" type="application/atom+xml" title="Latest blog articles" href="/blog/feeds/" />
+
+        
+            
+            <link rel="alternate" hreflang="ast" href="//ast.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ms-MY" href="//ms.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ca" href="//ca.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cs" href="//cs.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="cy" href="//cy.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="da" href="//da.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="de" href="//de.dolphin-emu.org/compat/" />
+            
+        
+            
+        
+            
+            <link rel="alternate" hreflang="es" href="//es.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="el" href="//el.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="fr" href="//fr.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="gl" href="//gl.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="it" href="//it.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="hu" href="//hu.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nl" href="//nl.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="nb" href="//nb.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pl" href="//pl.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt" href="//pt.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="pt-BR" href="//br.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ru" href="//ru.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="sv" href="//sv.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="tr" href="//tr.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="zh-CN" href="//cn.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ja" href="//ja.dolphin-emu.org/compat/" />
+            
+        
+            
+            <link rel="alternate" hreflang="ko" href="//ko.dolphin-emu.org/compat/" />
+            
+        
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap.min.9e0acbc8a914.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/bootstrap-theme.min.c1c924a4f6b3.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/css/dolphin.d9d1550ceb37.css" rel="stylesheet">
+        <link href="https://dolphin-emu.org/m/static/sprites/nav.fae7f1660efd.css" rel="stylesheet">
+        
+<link href="https://dolphin-emu.org/m/user/bnr/atlas-%23.css" rel="stylesheet">
+
+
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34036954-1']);
+          _gaq.push(['_setDomainName', 'dolphin-emu.org']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          window.google_analytics_uacct = "UA-34036954-1";
+        </script>
+        
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/highcharts.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/modules/data.js"></script>
+        <script>
+          var CHART_ID = 0;
+          function addChart(options) {
+            var this_id = CHART_ID++;
+            document.write('<div id="chart' + CHART_ID + '"></div>');
+            options['credits'] = false;
+            options['chart'] = options['chart'] || {};
+            options['chart']['style'] = options['chart']['style'] || {};
+            options['chart']['style']['fontFamily'] = 'Helvetica Neue,Helvetica,Arial,sans-serif';
+            Highcharts.chart("chart" + CHART_ID, options);
+          }
+          window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "content": {
+                "message": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services.",
+                "link": "Learn more",
+                "href": "https://cookiesandyou.com/",
+              },
+              "palette": {
+                "popup": {
+                  "background": "#000"
+                },
+                "button": {
+                  "background": "#f1d600"
+                }
+              }
+            })
+          });
+        </script>
+    </head>
+
+    <body>
+        
+
+        <div id="navbar-dolphin" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" id="hamburger" href="/"><img src="https://dolphin-emu.org/m/static/img/logo.fefed4054d1c.png" height="32" alt="Dolphin Emulator"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-left">
+                        <li><a href="/download.html">Download</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/media.html">Screenshots</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/guides.html">Guides</a></li>
+                        <li><a href="/compat.html">Compatibility</a></li>
+                        <li><a href="https://forums.dolphin-emu.org/">Forum</a></li>
+                        <li><a href="https://wiki.dolphin-emu.org/">Wiki</a></li>
+                        <li id="lastNavbarLi"><a href="https://github.com/dolphin-emu/dolphin">Code</a></li>
+                        <span id="sunMoon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-en"></div> <span>English</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+                                <li><a href="//ast.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-ast"></div><span dir="ltr">Asturianu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ms.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-ms"></div><span dir="ltr">Bahasa Melayu</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ca.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-ca"></div><span dir="ltr">Català</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cs.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-cs"></div><span dir="ltr">Česky</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cy.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-cy"></div><span dir="ltr">Cymraeg</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//da.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-da"></div><span dir="ltr">Dansk</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//de.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-de"></div><span dir="ltr">Deutsch</span></a></li>
+                                
+                            
+                                
+                            
+                                
+                                <li><a href="//es.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-es"></div><span dir="ltr">Español</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//el.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-el"></div><span dir="ltr">Ελληνικά</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//fr.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-fr"></div><span dir="ltr">Français</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//gl.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-gl"></div><span dir="ltr">Galego</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//it.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-it"></div><span dir="ltr">Italiano</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//hu.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-hu"></div><span dir="ltr">Magyar</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nl.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-nl"></div><span dir="ltr">Nederlands</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//nb.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-nb"></div><span dir="ltr">Norsk (Bokmål)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pl.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-pl"></div><span dir="ltr">Polski</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//pt.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-pt"></div><span dir="ltr">Português</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//br.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-br"></div><span dir="ltr">Português (Brasil)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ru.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-ru"></div><span dir="ltr">Русский</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//sv.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-sv"></div><span dir="ltr">Svenska</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//tr.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-tr"></div><span dir="ltr">Türkçe</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//cn.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-cn"></div><span dir="ltr">中文(中国)</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ja.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-ja"></div><span dir="ltr">日本語</span></a></li>
+                                
+                            
+                                
+                                <li><a href="//ko.dolphin-emu.org/compat/?nocr=true"><div class="flag sprite-nav-ko"></div><span dir="ltr">한국어</span></a></li>
+                                
+                            
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="container">
+            
+            
+
+<div class="col-row">
+<div class="row">
+    <div class="col-md-9 well col">
+        <div class="ratings-expl">
+        <h3>How to read the ratings</h3>
+
+        <ul>
+            <li><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="5 out of 5"> <strong>Perfect</strong>: No issues at all!</li>
+            <li><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="4 out of 5"> <strong>Playable</strong>: Runs well, only minor graphical or audio glitches. Games can be played all the way through.</li>
+            <li><img src="https://dolphin-emu.org/m/static/img/stars/3.43fe25f46703.png" alt="3 out of 5"> <strong>Starts</strong>: Starts, maybe even plays well, but crashes or major graphical/audio glitches.</li>
+            <li><img src="https://dolphin-emu.org/m/static/img/stars/2.195f9785addd.png" alt="2 out of 5"> <strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and starting.</li>
+            <li><img src="https://dolphin-emu.org/m/static/img/stars/1.6dfb2570f44e.png" alt="1 out of 5"> <strong>Broken</strong>: Crashes when booting.</li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="col-md-3 well col">
+        <div class="ratings-stats">
+        <h3>Statistics</h3>
+
+        <dl>
+        
+        <dt>
+            
+            <a href="/compat/filter/5/" title="Filter by this rating" class="pull-end"><i class="icon-filter"></i> Filter</a>
+            
+            Perfect: 36.2%
+        </dt>
+        <dd><div class="progress"><div class="progress-bar progress-bar-info" style="width: 36.20301959524574%"></div></div></dd>
+        
+        <dt>
+            
+            <a href="/compat/filter/4/" title="Filter by this rating" class="pull-end"><i class="icon-filter"></i> Filter</a>
+            
+            Playable: 60.7%
+        </dt>
+        <dd><div class="progress"><div class="progress-bar progress-bar-success" style="width: 60.68101509797623%"></div></div></dd>
+        
+        <dt>
+            
+            <a href="/compat/filter/3/" title="Filter by this rating" class="pull-end"><i class="icon-filter"></i> Filter</a>
+            
+            Starts: 2.3%
+        </dt>
+        <dd><div class="progress"><div class="progress-bar progress-bar-warning" style="width: 2.345004818503052%"></div></div></dd>
+        
+        <dt>
+            
+            <a href="/compat/filter/2/" title="Filter by this rating" class="pull-end"><i class="icon-filter"></i> Filter</a>
+            
+            Intro/Menu: 0.2%
+        </dt>
+        <dd><div class="progress"><div class="progress-bar progress-bar-danger" style="width: 0.22486347574686796%"></div></div></dd>
+        
+        <dt>
+            
+            <a href="/compat/filter/1/" title="Filter by this rating" class="pull-end"><i class="icon-filter"></i> Filter</a>
+            
+            Broken: 0.5%
+        </dt>
+        <dd><div class="progress"><div class="progress-bar progress-bar-danger" style="width: 0.5460970125281079%"></div></div></dd>
+        
+        </dl>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="text-center">
+<ul class="pagination">
+
+    
+    <li class="active"><a href="#">#</a></li>
+    
+
+    
+    <li><a href="/compat/A/">A</a></li>
+    
+
+    
+    <li><a href="/compat/B/">B</a></li>
+    
+
+    
+    <li><a href="/compat/C/">C</a></li>
+    
+
+    
+    <li><a href="/compat/D/">D</a></li>
+    
+
+    
+    <li><a href="/compat/E/">E</a></li>
+    
+
+    
+    <li><a href="/compat/F/">F</a></li>
+    
+
+    
+    <li><a href="/compat/G/">G</a></li>
+    
+
+    
+    <li><a href="/compat/H/">H</a></li>
+    
+
+    
+    <li><a href="/compat/I/">I</a></li>
+    
+
+    
+    <li><a href="/compat/J/">J</a></li>
+    
+
+    
+    <li><a href="/compat/K/">K</a></li>
+    
+
+    
+    <li><a href="/compat/L/">L</a></li>
+    
+
+    
+    <li><a href="/compat/M/">M</a></li>
+    
+
+    
+    <li><a href="/compat/N/">N</a></li>
+    
+
+    
+    <li><a href="/compat/O/">O</a></li>
+    
+
+    
+    <li><a href="/compat/P/">P</a></li>
+    
+
+    
+    <li><a href="/compat/Q/">Q</a></li>
+    
+
+    
+    <li><a href="/compat/R/">R</a></li>
+    
+
+    
+    <li><a href="/compat/S/">S</a></li>
+    
+
+    
+    <li><a href="/compat/T/">T</a></li>
+    
+
+    
+    <li><a href="/compat/U/">U</a></li>
+    
+
+    
+    <li><a href="/compat/V/">V</a></li>
+    
+
+    
+    <li><a href="/compat/W/">W</a></li>
+    
+
+    
+    <li><a href="/compat/X/">X</a></li>
+    
+
+    
+    <li><a href="/compat/Y/">Y</a></li>
+    
+
+    
+    <li><a href="/compat/Z/">Z</a></li>
+    
+
+</ul>
+</div>
+
+
+
+<table class="compat-list">
+    <thead>
+        <tr>
+            <th class="category"></th>
+            <th class="banner"></th>
+            <th class="title">Game title (click for details)</th>
+            <th class="rating">Compatibility</th>
+            <th class="update">Last updated</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-d2fe4fe4"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=%22Aha%21_I_Found_It%21%22_Hidden_Object_Game">&quot;Aha! I Found It!&quot; Hidden Object Game</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-9ed1a879"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=%22Aha%21_I_Got_It%21%22_Escape_Game">&quot;Aha! I Got It!&quot; Escape Game</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-f5c54212"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=007%3A_Agent_Under_Fire">007: Agent Under Fire</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">2 years ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-f72791c1"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=007%3A_Everything_or_Nothing">007: Everything or Nothing</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">3 years, 5 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-4a27af9a"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=007%3A_From_Russia_with_Love">007: From Russia with Love</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">10 months, 1 week ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-cd04ba50"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=007%3A_Nightfire">007: Nightfire</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">3 years, 5 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-04a1a37f"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=007%3A_Quantum_of_Solace">007: Quantum of Solace</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">4 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-4603710f"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=101-in-1_Explosive_Megamix">101-in-1 Explosive Megamix</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-c16bab5b"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=101-in-1_Party_Megamix">101-in-1 Party Megamix</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 3 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-6818158b"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=101-in-1_Sports_Party_Megamix">101-in-1 Sports Party Megamix</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">1 year, 7 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-824d7769"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=1080%C2%B0_Avalanche">1080° Avalanche</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">1 year ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/virtual-console.2640066753fe.png" width="32" height="32" alt="Virtual-console" title="Virtual-console"></td>
+            <td class="banner"><div class="bnr bnr-1d0ce71f"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=1080%C2%B0_Snowboarding">1080° Snowboarding</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/3.43fe25f46703.png" alt="Starts" title="Starts"></td>
+            <td class="update">4 years ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-2ec238ee"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=10_Minute_Solution">10 Minute Solution</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">1 year, 6 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-18c7ba14"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=18_Wheeler%3A_American_Pro_Trucker">18 Wheeler: American Pro Trucker</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">3 years, 5 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/virtual-console.2640066753fe.png" width="32" height="32" alt="Virtual-console" title="Virtual-console"></td>
+            <td class="banner"><div class="bnr bnr-ad1dec58"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=1942">1942</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-4455b5d0"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=2002_FIFA_World_Cup">2002 FIFA World Cup</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 7 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-30e3907a"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=2010_FIFA_World_Cup_South_Africa">2010 FIFA World Cup South Africa</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">2 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/virtual-console.2640066753fe.png" width="32" height="32" alt="Virtual-console" title="Virtual-console"></td>
+            <td class="banner"><div class="bnr bnr-21be18c8"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=2020_Super_Baseball">2020 Super Baseball</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">4 years ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-f9d1d0c2"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=250_Mannin_no_Kanken%3A_Wii_de_Tokoton_Kanji_Nou">250 Mannin no Kanken: Wii de Tokoton Kanji Nou</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-a91f1bfe"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=2_Fast_4_Gnomz">2 Fast 4 Gnomz</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">7 months, 2 weeks ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-82c0b5cd"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=2_Games_in_1%3A_Nickelodeon_SpongeBob_Schwammkopf%3A_Der_Film_%2B_Nickelodeon_SpongeBob_Schwammkopf%3A_Schlacht_um_Bikini_Bottom">2 Games in 1: Nickelodeon SpongeBob Schwammkopf: Der Film + Nickelodeon SpongeBob Schwammkopf: Schlacht um Bikini Bottom</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">4 months, 3 weeks ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-974e5def"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=2_Games_in_1%3A_The_Incredibles_/_Finding_Nemo">2 Games in 1: The Incredibles / Finding Nemo</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">3 years ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-e62c8370"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=2_Games_in_1%3A_The_SpongeBob_SquarePants_Movie_/_Tak_2%3A_The_Staff_of_Dreams">2 Games in 1: The SpongeBob SquarePants Movie / Tak 2: The Staff of Dreams</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">3 months, 1 week ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-191d4959"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=3-2-1%2C_Rattle_Battle%21">3-2-1, Rattle Battle!</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">11 months, 1 week ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-532bb1a5"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=3D_Pixel_Racing">3D Pixel Racing</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">4 years ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-3a590803"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=3%C2%B0C">3°C</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-f8466955"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=428%3A_F%C5%ABsa_Sareta_Shibuya_de">428: Fūsa Sareta Shibuya de</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">2 years, 3 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/gamecube.908f87dc288c.png" width="32" height="32" alt="Gamecube" title="Gamecube"></td>
+            <td class="banner"><div class="bnr bnr-9cb3020f"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=4x4_EVO_2">4x4 EVO 2</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">4 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-fe2411e4"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=5-in-1_Solitaire">5-in-1 Solitaire</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">4 years ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-df624a8e"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=5_Arcade_Gems">5 Arcade Gems</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">2 years, 1 month ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wiiware.599c282a935c.png" width="32" height="32" alt="Wiiware" title="Wiiware"></td>
+            <td class="banner"><div class="bnr bnr-568beb17"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=5_Spots_Party">5 Spots Party</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/5.7d3488bc4093.png" alt="Perfect" title="Perfect"></td>
+            <td class="update">1 year, 4 months ago</td>
+        </tr>
+        
+        <tr>
+            <td class="category"><img src="https://dolphin-emu.org/m/static/img/platforms/wii.79d2849663aa.png" width="32" height="32" alt="Wii" title="Wii"></td>
+            <td class="banner"><div class="bnr bnr-651a25bc"></div></td>
+            <td class="title always-ltr"><a href="https://wiki.dolphin-emu.org/index.php?title=%C5%8Ckami">Ōkami</a></td>
+            <td class="rating"><img src="https://dolphin-emu.org/m/static/img/stars/4.5096f691933f.png" alt="Playable" title="Playable"></td>
+            <td class="update">1 year, 5 months ago</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+
+<div class="text-center">
+<ul class="pagination">
+
+    
+    <li class="active"><a href="#">#</a></li>
+    
+
+    
+    <li><a href="/compat/A/">A</a></li>
+    
+
+    
+    <li><a href="/compat/B/">B</a></li>
+    
+
+    
+    <li><a href="/compat/C/">C</a></li>
+    
+
+    
+    <li><a href="/compat/D/">D</a></li>
+    
+
+    
+    <li><a href="/compat/E/">E</a></li>
+    
+
+    
+    <li><a href="/compat/F/">F</a></li>
+    
+
+    
+    <li><a href="/compat/G/">G</a></li>
+    
+
+    
+    <li><a href="/compat/H/">H</a></li>
+    
+
+    
+    <li><a href="/compat/I/">I</a></li>
+    
+
+    
+    <li><a href="/compat/J/">J</a></li>
+    
+
+    
+    <li><a href="/compat/K/">K</a></li>
+    
+
+    
+    <li><a href="/compat/L/">L</a></li>
+    
+
+    
+    <li><a href="/compat/M/">M</a></li>
+    
+
+    
+    <li><a href="/compat/N/">N</a></li>
+    
+
+    
+    <li><a href="/compat/O/">O</a></li>
+    
+
+    
+    <li><a href="/compat/P/">P</a></li>
+    
+
+    
+    <li><a href="/compat/Q/">Q</a></li>
+    
+
+    
+    <li><a href="/compat/R/">R</a></li>
+    
+
+    
+    <li><a href="/compat/S/">S</a></li>
+    
+
+    
+    <li><a href="/compat/T/">T</a></li>
+    
+
+    
+    <li><a href="/compat/U/">U</a></li>
+    
+
+    
+    <li><a href="/compat/V/">V</a></li>
+    
+
+    
+    <li><a href="/compat/W/">W</a></li>
+    
+
+    
+    <li><a href="/compat/X/">X</a></li>
+    
+
+    
+    <li><a href="/compat/Y/">Y</a></li>
+    
+
+    
+    <li><a href="/compat/Z/">Z</a></li>
+    
+
+</ul>
+</div>
+
+
+
+        </div>
+
+        <footer>
+        <p class="footer-text">
+            &copy; Dolphin Emulator Project -
+            <a href="https://github.com/dolphin-emu/www">Website Source Code</a> -
+            <a href="/docs/privacy/">Privacy Policy</a>
+        </p>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://dolphin-emu.org/m/static/js/bootstrap.min.cfe18215d149.js"></script>
+        
+        
+    </body>
+</html>
+
+<link id="theme-link" rel="stylesheet" href="./lightDolphin.css">
+<link rel="stylesheet" href="./oreoDolphin.css">
+<script src="./toggleMode.js"></script>
