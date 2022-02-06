@@ -16,6 +16,10 @@
     background-color: #1e1e1e;   
     }
 
+    .well a{
+        color: #07b9ff;
+    }
+
     .well{
     /*
     Inner color
@@ -157,41 +161,6 @@
         border-width: medium;
         color: #f5e79e;
         border-color: #f5e79e;
-    }
-
-
-    .btn-info{
-        /*
-        background-image: linear-gradient(to bottom, #0057ff 0, #4e8bff 100%);
-        border-color: #5890ff;
-        */
-
-        background-image: linear-gradient(to bottom, #5f8af0 0, #2b64ea 100%);
-        background-image: -webkit-linear-gradient(top, #5f8af0 0, #2b64ea 100%);
-        background-image: -o-linear-gradient(top, #5f8af0 0, #2b64ea 100%);
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5f8af0), to(#2b64ea));
-        border-color: #2579cb;
-        background-color: #2b64ea;
-        /*
-        background-image: linear-gradient(to bottom, #0057ff 0, #0c51d6 100%);
-        border-color: #1552cc;
-        */
-    }
-
-    .btn-info:hover, .btn-info:focus{
-        background-color: #2c6de9;
-        border-color: #467fee;
-    }
-
-
-    .btn-info:active:focus{
-        background-color: #2b64ea;
-        border-color: #467fee;
-    }
-
-    .btn-info:active, .btn-info.active{
-        background-color: #2b64ea;
-        border-color: #467fee;
     }
 
 
